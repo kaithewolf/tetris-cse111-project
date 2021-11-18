@@ -1,12 +1,15 @@
 .headers on
-drop table MultiplayerGames;
-drop table SinglePlayer;
-drop table MapLeaderboard;
+drop table Users;
 drop table Leaderboards;
+drop table SinglePlayer;
+drop table Multiplayer;
+drop table MultiplayerGames;
 drop table PlayersinMultiplayerGames;
+drop table MapLeaderboard;
+drop table customMap;
 drop table PlayersInMap;
 
---put your code here
+--create table
 create table Users(
  username varchar(255) primary key);
 
@@ -71,5 +74,54 @@ create table GameType(
 create table FinishCondition(
  f_id int primary key,
  f_name varchar(255));
+
+
+--trigger
+CREATE TRIGGER if not exists del_user
+   AFTER DELETE ON Users
+BEGIN
+    delete from Leaderboards where username = old.username;
+    delete from SinglePlayer where username = old.username;
+    delete from Multiplayer where username = old.username;
+    delete from PlayersinMultiplayerGames where listOfPlayers = old.username;
+    delete from MapLeaderboard where username = old.username;
+    delete from customMap where createdBy = old.username;
+    delete from PlayersInMap where player = old.username;
+END;
+
+CREATE TRIGGER if not exists update_user
+   AFTER UPDATE ON Users
+BEGIN
+    update Leaderboards set username = new.username where username = old.username;
+    update SinglePlayer set username = new.username where username = old.username;
+    update Multiplayer set username = new.username where username = old.username;
+    update PlayersinMultiplayerGames set listOfPlayers = new.username where listOfPlayers = old.username;
+    update MapLeaderboard set username = new.username where username = old.username;
+    update customMap set createdBy = new.username where createdBy = old.username;
+    update PlayersInMap set player = new.username where player = old.username;
+END;
+
+
+CREATE TRIGGER if not exists delete_match
+   AFTER DELETE ON MultiplayerGames
+BEGIN
+    delete from PlayersInMultiplayerGames where PlayersInMultiplayerGames.MatchID = old.MatchID;
+END;
+
+
+CREATE TRIGGER if not exists delete_multiplayer_record
+   AFTER DELETE ON multiplayer
+BEGIN
+    delete from PlayersInMultiplayerGames where PlayersInMultiplayerGames.MatchRecord = old.recordID;
+END;
+
+
+CREATE TRIGGER if not exists delete_map
+   AFTER DELETE ON customMap 
+BEGIN
+    delete from MapLeaderboard where MapLeaderboard.MapID = old.MapID;
+    delete from PlayersInMap where PlayersInMap.MapID = old.MapID;
+END;
+
 
 .headers off
