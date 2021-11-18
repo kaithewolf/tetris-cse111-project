@@ -40,6 +40,10 @@ UPDATE Users
 Set username = 'amscrubpls'
 WHERE username = 'nateqwq';
 
+UPDATE Users
+Set username = 'mpPlonker'
+WHERE username = 'jimothynoob';
+
 --delete vod of bad play (ashamed 10 apm game)
 DELETE FROM Multiplayer
 WHERE recordID = 34293;
@@ -53,8 +57,45 @@ DELETE FROM customMap
 WHERE MapName = "T-Spins";
 
 
+--MP over SP ratio
+--pps is calculated as such:
+--  pieces dropped / game time
+
+SELECT username, MPpps/SPpps AS ratio
+FROM Users, (SELECT AVG(piecesDropped/gameTime) AS MPpps
+      FROM Multiplayer
+      WHERE username = "jimothynoob"),
+      (SELECT AVG(piecesDropped/gameTime) AS SPpps
+      FROM SinglePlayer
+      WHERE username = "jimothynoob")
+WHERE Users.username = "jimothynoob";
+
+--attack per minute (apm) calculation
+--apm is calculated as such:
+--  (attacks sent / game time) * 60
+SELECT Users.username, APM
+FROM Users, (SELECT AVG(attackSent/gameTime) * 60 as APM
+             FROM Multiplayer
+             WHERE username = "keitar431")
+WHERE Users.username = "keitar431";
+
+
+
+--attack per piece (app) calculation
+--app is calculated as such:
+--  (attacks sent / pieces dropped)
+SELECT Users.username, APP
+FROM Users, (SELECT AVG(CAST(attackSent as FLOAT)/CAST(piecesDropped as FLOAT)) as APP
+             FROM Multiplayer
+             WHERE username = "upDog")
+WHERE Users.username = "upDog";
+
+--showing percent of highest b2b
+SELECT DISTINCT Multiplayer.username, b2b, PERCENT_RANK() OVER (
+        ORDER BY b2b DESC) AS Percentb2b
+FROM Multiplayer;
+
+
 -- delete a user, triggers del_user
---DELETE FROM Users
---WHERE username = 'hi0000';
-
-
+DELETE FROM Users
+WHERE username = 'hi0000';
