@@ -105,14 +105,20 @@ END;
 CREATE TRIGGER if not exists delete_match
    AFTER DELETE ON MultiplayerGames
 BEGIN
-    delete from PlayersInMultiplayerGames where PlayersInMultiplayerGames.MatchID = old.MatchID;
+    delete from PlayersinMultiplayerGames where PlayersinMultiplayerGames.MatchID = old.MatchID;
 END;
 
+CREATE TRIGGER if not exists no_more_records
+   AFTER DELETE ON PlayersinMultiplayerGames
+   WHEN (SELECT count(old.MatchID) FROM PlayersinMultiplayerGames) == 0
+BEGIN
+    delete from MultiplayerGames where MultiplayerGames.MatchID = old.MatchID;
+END; 
 
 CREATE TRIGGER if not exists delete_multiplayer_record
    AFTER DELETE ON multiplayer
 BEGIN
-    delete from PlayersInMultiplayerGames where PlayersInMultiplayerGames.MatchRecord = old.recordID;
+    delete from PlayersinMultiplayerGames where PlayersinMultiplayerGames.MatchRecord = old.recordID;
 END;
 
 

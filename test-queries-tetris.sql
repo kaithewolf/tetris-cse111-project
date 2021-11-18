@@ -57,7 +57,7 @@ DELETE FROM customMap
 WHERE MapName = "T-Spins";
 
 
---MP over SP ratio
+--MP over SP ratio of all games
 --pps is calculated as such:
 --  pieces dropped / game time
 
@@ -69,6 +69,19 @@ FROM Users, (SELECT AVG(piecesDropped/gameTime) AS MPpps
       FROM SinglePlayer
       WHERE username = "jimothynoob")
 WHERE Users.username = "jimothynoob";
+
+--MP over SP pps, grouped by date
+SELECT username, MPpps/SPpps AS ratio
+FROM Users, (SELECT AVG(piecesDropped/gameTime) AS MPpps, datePlayed
+      FROM Multiplayer M, MultiplayerGames MG, PlayersInMultiplayerGames P
+      WHERE username = "jimothynoob" and M.recordID = P.MatchRecord and P.MatchID = MG.MatchID
+      GROUP BY MG.datePlayed)
+      LEFT JOIN 
+      (SELECT AVG(piecesDropped/gameTime) AS SPpps, date_played
+      FROM SinglePlayer
+      WHERE username = "jimothynoob"
+      GROUP BY date_played)
+WHERE Users.username = "jimothynoob" and date_played = datePlayed;
 
 --attack per minute (apm) calculation
 --apm is calculated as such:
@@ -90,12 +103,15 @@ FROM Users, (SELECT AVG(CAST(attackSent as FLOAT)/CAST(piecesDropped as FLOAT)) 
              WHERE username = "upDog")
 WHERE Users.username = "upDog";
 
---showing percent of highest b2b
-SELECT DISTINCT Multiplayer.username, b2b, PERCENT_RANK() OVER (
-        ORDER BY b2b DESC) AS Percentb2b
+--showing percentile of highest b2b
+SELECT DISTINCT Multiplayer.username, b2b, 1 - PERCENT_RANK() OVER (ORDER BY b2b DESC) AS Percentb2b
 FROM Multiplayer;
 
 
 -- delete a user, triggers del_user
 DELETE FROM Users
 WHERE username = 'hi0000';
+
+-- delete multiplayer game, associated records are also deleted
+DELETE FROM MultiplayerGames
+WHERE MatchID = "TYULK";
