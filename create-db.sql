@@ -129,5 +129,29 @@ BEGIN
     delete from PlayersInMap where PlayersInMap.MapID = old.MapID;
 END;
 
+/* CREATE TRIGGER if not exists insert_to_rank
+    AFTER INSERT ON SinglePlayer
+    WHEN new.gameTime < (SELECT gameTime FROM SinglePlayer s 
+                        WHERE s.username = new.username and s.gameType = new.gameType
+                        and new.gameType <> 5)
+        OR
+        new.gameTime > (SELECT gameTime FROM SinglePlayer s 
+                        WHERE s.username = new.username and s.gameType = new.gameType
+                        and new.gameType = 5)
+        OR
+        new.username not in (SELECT username FROM Leaderboards)
+    
+BEGIN
+        CASE new.username in (SELECT username FROM Leaderboards)
+            UPDATE Leaderboards
+            SET record = new.gameTime
+            WHERE Leaderboards.username = new.username
+            and Leaderboards.gameType = new.gameType
+        ELSE
+            INSERT INTO Leaderboards
+            values (0, new.username, new.gameTime, new.date_played, new.gameType)
+    END
+END; */
+
 
 .headers off

@@ -24,6 +24,7 @@ insert into SinglePlayer(
  gameType)
  values
      (13459, 'jimothynoob', 30.67, '2021-11-30', 100, 1),
+     (13851, 'jimothynoob', 45.4, '2021-11-29', 105, 1),
      (15684, 'keitar431', 45.99, '2021-12-10', 105, 1),
      (17803, 'hi0000', 65.99, '2021-10-30', 109, 1),
      (13950, 'upDog', 95.34, '2020-09-12', 103, 1),
@@ -48,7 +49,7 @@ insert into MultiplayerGames(
  gameMode ,
  datePlayed )
  values
-     ('EGDFH', 'SJED120', 1, '2021-12-10'),
+     ('EGDFH', 'SJED120', 1, '2021-11-30'),
      ('TYULK', 'SLEOD130', 1, '2021-11-08');
 
 insert into PlayersinMultiplayerGames(

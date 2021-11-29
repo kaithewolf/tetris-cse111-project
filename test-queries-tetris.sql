@@ -6,6 +6,12 @@ FROM Leaderboards
 WHERE gameType = 1
 ORDER BY modeRank ASC;
 
+-- get survival leaderboard
+SELECT modeRank, username, record
+FROM Leaderboards
+WHERE gameType = 4
+ORDER BY modeRank ASC;
+
 -- get players in a multiplayer game session
 SELECT listOfPlayers
 FROM PlayersInMultiplayerGames
