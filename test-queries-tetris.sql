@@ -1,5 +1,8 @@
 .headers on
 
+-- insert new map player
+INSERT INTO MapLeaderboard(MapID, mapRank, username, record, dateSet)
+values(11111, 3, "woweee", 10.4, "2000-05-21");
 -- get sprint leaderboard
 SELECT modeRank, username, record
 FROM Leaderboards

@@ -183,6 +183,13 @@ BEGIN
     values(new.username);
 END;
 
+CREATE TRIGGER if not exists insert_to_users_maps
+    AFTER INSERT ON MapLeaderboard 
+BEGIN
+    insert or ignore into Users(username)
+    values(new.username);
+END;
+
 /* CREATE TRIGGER if not exists insert_to_rank
     AFTER INSERT ON SinglePlayer
     WHEN new.gameTime < (SELECT gameTime FROM SinglePlayer s 
