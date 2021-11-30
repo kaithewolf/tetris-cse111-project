@@ -73,7 +73,6 @@ create table customMap(
  MapID int primary key,
  MapName varchar(255),
  createdBy varchar(255),
- difficulty float,
  finishCondition int );
 
 create table PlayersInMap(

@@ -67,12 +67,11 @@ insert into customMap(
  MapID   ,
  MapName  ,
  createdBy  ,
- difficulty ,
  finishCondition  )
  values
-     (74830, 'T-Spins', 'guuuuhhhh', 33.2, 1),
-     (12345, 'Scuffed PC', 'jimothynoob', 55.34, 2),
-     (23456, 'testing s z spin', 'guuuuhhhh', 67.7, 2);
+     (74830, 'T-Spins', 'guuuuhhhh',  1),
+     (12345, 'Scuffed PC', 'jimothynoob',  2),
+     (23456, 'testing s z spin', 'guuuuhhhh',  2);
 
 insert into PlayersInMap(
  MapID ,
