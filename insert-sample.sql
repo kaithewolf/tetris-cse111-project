@@ -47,11 +47,10 @@ insert into Multiplayer(
 insert into MultiplayerGames(
  MatchID  ,
  roomID  ,
- gameMode ,
  datePlayed )
  values
-     ('EGDFH', 'SJED120', 1, '2021-11-30'),
-     ('TYULK', 'SLEOD130', 1, '2021-11-08');
+     ('EGDFH', 'SJED120', '2021-11-30'),
+     ('TYULK', 'SLEOD130', '2021-11-08');
 
 insert into PlayersinMultiplayerGames(
  MatchID  ,

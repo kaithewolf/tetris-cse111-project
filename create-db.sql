@@ -61,7 +61,6 @@ create table Multiplayer(
 create table MultiplayerGames(
  MatchID varchar(255),
  roomID varchar(255),
- gameMode int,
  datePlayed date);
 
 create table PlayersinMultiplayerGames(
