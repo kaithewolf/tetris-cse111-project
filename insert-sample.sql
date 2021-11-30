@@ -7,7 +7,7 @@ values('keitar431'),
 ('upDog'),
 ('guuuuhhhh');
 
-insert into Leaderboards(modeRank,username,record,timeSet,gameType)
+insert into Sprint_Leaderboard(modeRank,username,record,timeSet)
 values
     (1, 'jimothynoob', 30.67, '2021-11-30', 1),
     (2, 'keitar431', 45.99, '2021-12-10', 1),

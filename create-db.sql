@@ -1,25 +1,44 @@
 .headers on
-drop table Users;
-drop table Leaderboards;
-drop table SinglePlayer;
-drop table Multiplayer;
-drop table MultiplayerGames;
-drop table PlayersinMultiplayerGames;
-drop table MapLeaderboard;
-drop table customMap;
-drop table PlayersInMap;
+drop table if exists Users;
+drop table if exists Sprint_Leaderboard;
+drop table if exists Cheese_Leaderboard; 
+drop table if exists Survival_Leaderboard;
+drop table if exists Ultra_Leaderboard;
+drop table if exists SinglePlayer;
+drop table if exists Multiplayer;
+drop table if exists MultiplayerGames;
+drop table if exists PlayersinMultiplayerGames;
+drop table if exists MapLeaderboard;
+drop table if exists customMap;
+drop table if exists PlayersInMap;
 
 --create table
 create table Users(
  username varchar(255) primary key);
 
-create table Leaderboards(
- modeRank int,
+create table Sprint_Leaderboard(
+ modeRank int primary key ,
  username varchar(255) ,
  record float ,
- timeSet varchar(255),
- gameType int,
- primary key (modeRank, gameType));
+ timeSet varchar(255) );
+
+create table Survival_Leaderboard(
+ modeRank int primary key ,
+ username varchar(255) ,
+ record float ,
+ timeSet varchar(255) );
+
+create table Cheese_Leaderboard(
+ modeRank int primary key ,
+ username varchar(255) ,
+ record float ,
+ timeSet varchar(255) );
+
+create table Ultra_Leaderboard(
+ modeRank int primary key ,
+ username varchar(255) ,
+ record float ,
+ timeSet varchar(255));
 
 create table SinglePlayer(
  recordID int primary key,
@@ -80,7 +99,10 @@ create table FinishCondition(
 CREATE TRIGGER if not exists del_user
    AFTER DELETE ON Users
 BEGIN
-    delete from Leaderboards where username = old.username;
+    delete from Sprint_Leaderboards where username = old.username;
+    delete from Cheese_Leaderboards where username = old.username;
+    delete from Survival_Leaderboards where username = old.username;
+    delete from Ultra_Leaderboards where username = old.username;
     delete from SinglePlayer where username = old.username;
     delete from Multiplayer where username = old.username;
     delete from PlayersinMultiplayerGames where listOfPlayers = old.username;
@@ -92,7 +114,10 @@ END;
 CREATE TRIGGER if not exists update_user
    AFTER UPDATE ON Users
 BEGIN
-    update Leaderboards set username = new.username where username = old.username;
+    update Sprint_Leaderboard set username = new.username where username = old.username;
+    update Cheese_Leaderboard set username = new.username where username = old.username;
+    update Survival_Leaderboard set username = new.username where username = old.username;
+    update Ultra_Leaderboard set username = new.username where username = old.username;
     update SinglePlayer set username = new.username where username = old.username;
     update Multiplayer set username = new.username where username = old.username;
     update PlayersinMultiplayerGames set listOfPlayers = new.username where listOfPlayers = old.username;
