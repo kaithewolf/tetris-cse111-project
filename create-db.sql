@@ -4,6 +4,7 @@ drop table if exists Sprint_Leaderboard;
 drop table if exists Cheese_Leaderboard; 
 drop table if exists Survival_Leaderboard;
 drop table if exists Ultra_Leaderboard;
+drop table if exists Leaderboards;
 drop table if exists SinglePlayer;
 drop table if exists Multiplayer;
 drop table if exists MultiplayerGames;
