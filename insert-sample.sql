@@ -103,7 +103,7 @@ insert into GameType(g_id, g_name)
 
 insert into FinishCondition(f_id   , f_name  )
 values
-    (1, 'clear_blocks'),
-    (2, 'pc');
+    (0, 'clear_blocks'),
+    (1, 'pc');
 
 .headers off
