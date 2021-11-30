@@ -41,7 +41,8 @@ def execute(_conn, string):
 
 def executemany(_conn, string, tup):
     try:
-        _conn.executemany(string, tup)
+        cur = _conn.cursor()
+        cur.executemany(string, tup)
         _conn.commit()
         print("success")
     except Error as e:
@@ -74,7 +75,7 @@ def parse_leaderboard(parsed):
         return parsed_list
         
 def main():
-    database = r"tetris.sqlite"
+    database = r"tetris.db"
 
     # create a database connection
     conn = openConnection(database)
@@ -83,18 +84,46 @@ def main():
         sprint_results = requests.get("http://jstris.jezevec10.com/api/leaderboard/1?mode=1&offset=0")
         sprint_parsed = json.loads(sprint_results.text.encode('utf8'))
         sprint_list = parse_leaderboard(sprint_parsed)
+        command = '''
+        INSERT INTO Sprint_Leaderboard(modeRank,username,record,date_played)
+        values
+            (?, ? ,? ,?);
+        '''
+        print("insert sprint:")
+        executemany(conn, command, sprint_list)
         
         cheese_results = requests.get("http://jstris.jezevec10.com/api/leaderboard/3?mode=1&offset=0")
         cheese_parsed = json.loads(cheese_results.text.encode('utf8'))
         cheese_list = parse_leaderboard(cheese_parsed)
+        command = '''
+        INSERT INTO Cheese_Leaderboard(modeRank,username,record,date_played)
+        values
+            (?, ? ,? ,?);
+        '''
+        print("insert cheese:")
+        executemany(conn, command, cheese_list)
         
         survival_results = requests.get("http://jstris.jezevec10.com/api/leaderboard/4?mode=1&offset=0")
         survival_parsed = json.loads(survival_results.text.encode('utf8'))
         survival_list = parse_leaderboard(survival_parsed)
+        command = '''
+        INSERT INTO Survival_Leaderboard(modeRank,username,record,date_played)
+        values
+            (?, ? ,? ,?);
+        '''
+        print("insert survival:")
+        executemany(conn, command, survival_list)
 
         ultra_results = requests.get("http://jstris.jezevec10.com/api/leaderboard/5?mode=1&offset=0")
         ultra_parsed = json.loads(ultra_results.text.encode('utf8'))
         ultra_list = parse_leaderboard(ultra_parsed)
+        command = '''
+        INSERT INTO Ultra_Leaderboard(modeRank,username,record,date_played)
+        values
+            (?, ? ,? ,?);
+        '''
+        print("insert ultra:")
+        executemany(conn, command, ultra_list)
 
 
 
