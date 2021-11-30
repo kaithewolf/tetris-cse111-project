@@ -101,10 +101,10 @@ create table FinishCondition(
 CREATE TRIGGER if not exists del_user
    AFTER DELETE ON Users
 BEGIN
-    delete from Sprint_Leaderboards where username = old.username;
-    delete from Cheese_Leaderboards where username = old.username;
-    delete from Survival_Leaderboards where username = old.username;
-    delete from Ultra_Leaderboards where username = old.username;
+    delete from Sprint_Leaderboard where username = old.username;
+    delete from Cheese_Leaderboard where username = old.username;
+    delete from Survival_Leaderboard where username = old.username;
+    delete from Ultra_Leaderboard where username = old.username;
     delete from SinglePlayer where username = old.username;
     delete from Multiplayer where username = old.username;
     delete from PlayersinMultiplayerGames where listOfPlayers = old.username;
@@ -154,6 +154,34 @@ CREATE TRIGGER if not exists delete_map
 BEGIN
     delete from MapLeaderboard where MapLeaderboard.MapID = old.MapID;
     delete from PlayersInMap where PlayersInMap.MapID = old.MapID;
+END;
+
+CREATE TRIGGER if not exists insert_to_users_sprint
+    AFTER INSERT ON Sprint_Leaderboard 
+BEGIN
+    insert or ignore into Users(username)
+    values(new.username);
+END;
+
+CREATE TRIGGER if not exists insert_to_users_cheese
+    AFTER INSERT ON Cheese_Leaderboard 
+BEGIN
+    insert or ignore into Users(username)
+    values(new.username);
+END;
+
+CREATE TRIGGER if not exists insert_to_users_survival
+    AFTER INSERT ON Survival_Leaderboard 
+BEGIN
+    insert or ignore into Users(username)
+    values(new.username);
+END;
+
+CREATE TRIGGER if not exists insert_to_users_ultra
+    AFTER INSERT ON Ultra_Leaderboard 
+BEGIN
+    insert or ignore into Users(username)
+    values(new.username);
 END;
 
 /* CREATE TRIGGER if not exists insert_to_rank

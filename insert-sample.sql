@@ -1,19 +1,18 @@
 .headers on
 --put your code here
-insert into Users(username)
-values('keitar431'),
-('jimothynoob'),
-('hi0000'),
-('upDog'),
-('guuuuhhhh');
 
 insert into Sprint_Leaderboard(modeRank,username,record,timeSet)
 values
     (1, 'jimothynoob', 30.67, '2021-11-30'),
     (2, 'keitar431', 45.99, '2021-12-10'),
     (3, 'hi0000', 65.99, '2021-10-30'),
-    (4, 'upDog', 95.34, '2020-09-12'),
-    (1, 'guuuuhhhh', 56.78, '2021-10-31');
+    (4, 'upDog', 95.34, '2020-09-12');
+
+insert into Survival_Leaderboard(modeRank, username, record, timeSet)
+values
+    (1, 'hi0000', 65.99, '2021-10-30'),
+    (2, 'upDog', 95.34, '2020-09-12'),
+    (3, 'guuuuhhhh', 56.78, '2021-10-31');
 
 insert into SinglePlayer(
  recordID,
