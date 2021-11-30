@@ -29,3 +29,9 @@ multiplayer_game = multiplayer_game_table.find_all("tr")
 game_list = []
 find_multiplayer_id(game_list)
 print(game_list)
+
+game = requests.get('https://jstris.jezevec10.com/games/'+str(game_list[0]))
+game_page = BeautifulSoup(game.content, 'html.parser')
+player_table = game_page.find('tbody')
+player_table = player_table.find_all("tr")
+

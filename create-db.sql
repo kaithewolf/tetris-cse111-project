@@ -50,9 +50,11 @@ create table SinglePlayer(
 
 create table Multiplayer(
  recordID int primary key,
- username varchar(255) ,
+ username varchar(255),
  gameTime float,
+ attack int,
  attackSent int,
+ received int,
  piecesDropped int,
  b2b int);
 

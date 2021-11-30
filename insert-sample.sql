@@ -9,11 +9,11 @@ values('keitar431'),
 
 insert into Sprint_Leaderboard(modeRank,username,record,timeSet)
 values
-    (1, 'jimothynoob', 30.67, '2021-11-30', 1),
-    (2, 'keitar431', 45.99, '2021-12-10', 1),
-    (3, 'hi0000', 65.99, '2021-10-30', 1),
-    (4, 'upDog', 95.34, '2020-09-12', 1),
-    (1, 'guuuuhhhh', 56.78, '2021-10-31', 4);
+    (1, 'jimothynoob', 30.67, '2021-11-30'),
+    (2, 'keitar431', 45.99, '2021-12-10'),
+    (3, 'hi0000', 65.99, '2021-10-30'),
+    (4, 'upDog', 95.34, '2020-09-12'),
+    (1, 'guuuuhhhh', 56.78, '2021-10-31');
 
 insert into SinglePlayer(
  recordID,
@@ -34,14 +34,16 @@ insert into Multiplayer(
  recordID,
  username,
  gameTime,
+ attack,
  attackSent,
+ received,
  piecesDropped,
  b2b )
  values
-     (23840, 'jimothynoob', 93.31, 99, 130, 16),
-     (34920, 'keitar431', 93.10, 60, 95, 5),
-     (34293, 'hi0000', 34.50, 5, 30, 2),
-     (49604, 'upDog', 35.20, 28, 20, 0);
+     (23840, 'jimothynoob', 93.31, 120, 99, 10, 130, 16),
+     (34920, 'keitar431', 93.10, 100, 60, 40, 95, 5),
+     (34293, 'hi0000', 34.50, 10, 5, 99, 30, 2),
+     (49604, 'upDog', 35.20, 30, 28, 40, 20, 0);
 
 insert into MultiplayerGames(
  MatchID  ,

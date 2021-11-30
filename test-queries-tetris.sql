@@ -29,9 +29,9 @@ WHERE Users.username = SinglePlayer.username
     AND Users.username = 'jimothynoob';
 
 --get all users with over or equal 30 attack per minute
-SELECT username, attackSent/gameTime
+SELECT username, attack/gameTime
 FROM Multiplayer
-WHERE attackSent/gameTime >= 30;
+WHERE attack/gameTime >= 30;
 
 --insert a new user
 INSERT INTO Users
@@ -93,7 +93,7 @@ WHERE Users.username = "jimothynoob" and date_played = datePlayed;
 --apm is calculated as such:
 --  (attacks sent / game time) * 60
 SELECT Users.username, APM
-FROM Users, (SELECT AVG(attackSent/gameTime) * 60 as APM
+FROM Users, (SELECT AVG(attack/gameTime) * 60 as APM
              FROM Multiplayer
              WHERE username = "keitar431")
 WHERE Users.username = "keitar431";
@@ -104,7 +104,7 @@ WHERE Users.username = "keitar431";
 --app is calculated as such:
 --  (attacks sent / pieces dropped)
 SELECT Users.username, APP
-FROM Users, (SELECT AVG(CAST(attackSent as FLOAT)/CAST(piecesDropped as FLOAT)) as APP
+FROM Users, (SELECT AVG(CAST(attack as FLOAT)/CAST(piecesDropped as FLOAT)) as APP
              FROM Multiplayer
              WHERE username = "upDog")
 WHERE Users.username = "upDog";
