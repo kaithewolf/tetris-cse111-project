@@ -1,14 +1,14 @@
 .headers on
 --put your code here
 
-insert into Sprint_Leaderboard(modeRank,username,record,timeSet)
+insert into Sprint_Leaderboard(modeRank,username,record,date_played)
 values
     (1, 'jimothynoob', 30.67, '2021-11-30'),
     (2, 'keitar431', 45.99, '2021-12-10'),
     (3, 'hi0000', 65.99, '2021-10-30'),
     (4, 'upDog', 95.34, '2020-09-12');
 
-insert into Survival_Leaderboard(modeRank, username, record, timeSet)
+insert into Survival_Leaderboard(modeRank, username, record, date_played)
 values
     (1, 'hi0000', 65.99, '2021-10-30'),
     (2, 'upDog', 95.34, '2020-09-12'),

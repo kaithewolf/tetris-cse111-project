@@ -20,25 +20,25 @@ create table Sprint_Leaderboard(
  modeRank int primary key ,
  username varchar(255) ,
  record float ,
- timeSet varchar(255) );
+ date_played varchar(255) );
 
 create table Survival_Leaderboard(
  modeRank int primary key ,
  username varchar(255) ,
  record float ,
- timeSet varchar(255) );
+ date_played varchar(255) );
 
 create table Cheese_Leaderboard(
  modeRank int primary key ,
  username varchar(255) ,
  record float ,
- timeSet varchar(255) );
+ date_played varchar(255) );
 
 create table Ultra_Leaderboard(
  modeRank int primary key ,
  username varchar(255) ,
  record float ,
- timeSet varchar(255));
+ date_played varchar(255));
 
 create table SinglePlayer(
  recordID int primary key,
