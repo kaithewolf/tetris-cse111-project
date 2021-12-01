@@ -135,6 +135,7 @@ def main():
         map_leaderboard_list = []
         players_in_maps = []
         map_downstack_games = []
+        null_record = -1
         for i in range(20):
             #map api
             map_api = requests.get("https://jstris.jezevec10.com/maps/api/"+str(i+1))
@@ -164,11 +165,14 @@ def main():
                     pieces = int(elements[3].text.strip())
                     date = elements[6].text.split()[0]
                     record = elements[7].find("a")
-                    if record != None:
+                    if record == None:
+                        recordID = null_record
+                        null_record = null_record-1
+                    else:
                         recordID = int(record["href"].split("/")[-1])
-                        map_leaderboard_list.append((map_api_parsed["id"], rank, name, time, date))
-                        players_in_maps.append((map_api_parsed["id"], recordID))
-                        map_downstack_games.append((recordID, name, time, date, pieces))
+                    map_leaderboard_list.append((map_api_parsed["id"], rank, name, time, date))
+                    players_in_maps.append((map_api_parsed["id"], recordID))
+                    map_downstack_games.append((recordID, name, time, date, pieces))
                     rank += 1
                     if rank >= 101:
                         break
@@ -204,7 +208,7 @@ def main():
         '''
         print("insert MapDownstack:")
         executemany(conn, command, map_downstack_games)
-    
+                    
 
     closeConnection(conn, database)
 
