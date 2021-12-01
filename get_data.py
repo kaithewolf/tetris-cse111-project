@@ -160,8 +160,6 @@ def main():
                     elements = row.find_all("td")
                     name = elements[1].text.strip()
                     time = timestring_to_seconds(elements[2].text)
-                    time_text = elements[2].text.split(":")
-                    time = float(time_text[-1]) + float(len(time_text)-1)*float(time_text[0])*60
                     pieces = int(elements[3].text.strip())
                     date = elements[6].text.split()[0]
                     record = elements[7].find("a")
@@ -208,6 +206,51 @@ def main():
         '''
         print("insert MapDownstack:")
         executemany(conn, command, map_downstack_games)
+
+        #for each user, get single player (each mode) and multiplayer games
+        command = '''
+        SELECT * FROM Users;
+        '''
+        curs = conn.cursor()
+        curs.execute(command)
+        userlist = curs.fetchall()
+
+        multiplayer_list = []
+        players_in_games_list = []
+        multiplayer_games_list = []
+        for user in userlist:
+            for i in range(10):
+                live_games = requests.get("https://jstris.jezevec10.com/api/u/"+user+"/live/games?offset="+str(i*50))
+                parsed_games = json.loads(live_games.text.encode("utf8"))
+                
+                for j in range(10):
+                    date = parsed_games[j]["gtime"].split()[0]
+                    matchID = parsed_games[j]["gid"]
+                    multiplayer_games_list.append((matchID, parsed_games[j]["cid"], date))
+                    match_result = requests.get("https://jstris.jezevec10.com/games/"+str(matchID))
+                    match_page = BeautifulSoup(match_result.contents, "html.parser")
+                    match_table = match_page.find_all("table")[-1]
+                    match_body = match_table.find("tbody")
+                    match_rows = match_body.find_all("tr")
+                    for row in match_rows:
+                        elements = row.find_all("td")
+                        name = elements[1].text
+                        time = timestring_to_seconds(elements[2].text)
+                        attack = int(elements[3].text)
+                        sent = int(elements[4].text)
+                        received = int(elements[5].text)
+                        b2b = int(elements[6].text)
+                        blocks = int(elements[8])
+                        record = row.find("a")
+                        if record == None:
+                            recordID = null_record
+                            null_record = null_record-1
+                        else:
+                            recordID = int(record["href"].split("/")[-1])
+
+                        multiplayer_list.append((recordID, name, time, attack, sent, received, blocks, b2b))
+                        players_in_games_list.append((matchID, name, recordID))
+                    
                     
 
     closeConnection(conn, database)
