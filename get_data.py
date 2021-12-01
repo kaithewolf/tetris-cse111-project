@@ -1,5 +1,6 @@
 import requests
 import sqlite3
+import time
 from sqlite3 import Error
 from bs4 import BeautifulSoup
 import json
@@ -86,7 +87,7 @@ def main():
     conn = openConnection(database)
     with conn:
         #Single Player Leaderboards, top 100 of each
-        sprint_results = requests.get("http://jstris.jezevec10.com/api/leaderboard/1?mode=1&offset=0", stream=True, verify=False)
+        sprint_results = requests.get("http://jstris.jezevec10.com/api/leaderboard/1?mode=1&offset=0", stream=True)
         sprint_parsed = json.loads(sprint_results.text.encode('utf8'))
         sprint_list = parse_leaderboard(sprint_parsed)
         command = '''
@@ -140,11 +141,17 @@ def main():
             #map api
             map_api = requests.get("https://jstris.jezevec10.com/maps/api/"+str(i+1))
             if map_api.ok:
+                api_start = time.time()
                 map_api_parsed = json.loads(map_api.text.encode('utf8'))
+                api_end = time.time()
+                print("get api"+str(i+1)+f" in {api_end - api_start} ")
 
                 #map leaderboard page
                 #get name of creator
-                map_results = requests.get("https://jstris.jezevec10.com/map/"+str(i+1), stream=True, verify=False)
+                map_timer_start = time.time()
+                map_results = requests.get("https://jstris.jezevec10.com/map/"+str(i+1), stream=True)
+                map_timer_end = time.time()
+                print(f"getmap took: {map_timer_end - map_timer_start} seconds \n")
                 map_page = BeautifulSoup(map_results.content, 'html.parser')
                 map_header = map_page.find("table")
                 name_section = map_header.find_all("tr")[-1]
@@ -159,7 +166,7 @@ def main():
                 for row in table_rows:
                     elements = row.find_all("td")
                     name = elements[1].text.strip()
-                    time = timestring_to_seconds(elements[2].text)
+                    timeset = timestring_to_seconds(elements[2].text)
                     pieces = int(elements[3].text.strip())
                     date = elements[6].text.split()[0]
                     record = elements[7].find("a")
@@ -168,9 +175,9 @@ def main():
                         null_record = null_record-1
                     else:
                         recordID = int(record["href"].split("/")[-1])
-                    map_leaderboard_list.append((map_api_parsed["id"], rank, name, time, date))
+                    map_leaderboard_list.append((map_api_parsed["id"], rank, name, timeset, date))
                     players_in_maps.append((map_api_parsed["id"], recordID))
-                    map_downstack_games.append((recordID, name, time, date, pieces))
+                    map_downstack_games.append((recordID, name, timeset, date, pieces))
                     rank += 1
                     if rank >= 101:
                         break
@@ -221,7 +228,11 @@ def main():
         for user in userlist:
             for i in range(10):
                 offset = i*50
-                live_games = requests.get("https://jstris.jezevec10.com/api/u/"+''.join(user)+"/live/games?offset="+str(offset), stream=True, verify=False)
+                api_start = time.time()
+                live_games = requests.get("https://jstris.jezevec10.com/api/u/"+''.join(user)+"/live/games?offset="+str(offset), stream=True)
+                api_end = time.time()
+                print(f"get multi api {user}{i}: {api_end - api_start} seconds")
+
                 parsed_games = json.loads(live_games.text.encode("utf8"))
                 if len(parsed_games) > 0:
                     count = 0
@@ -229,10 +240,15 @@ def main():
                         if game["gtime"] is not None:
                             date = game["gtime"].split()[0]
                         else:
-                            date = "None"
+                            date = "1111-11-11"
                         matchID = game["gid"]
                         multiplayer_games_list.append((matchID, game["cid"], date))
-                        match_result = requests.get("https://jstris.jezevec10.com/games/"+str(matchID), stream=True, verify=False)
+
+                        api_start = time.time()
+                        match_result = requests.get("https://jstris.jezevec10.com/games/"+str(matchID), stream=True)
+                        api_end = time.time()
+                        print(f"get match page {count}: {api_end - api_start} seconds")
+
                         match_page = BeautifulSoup(match_result.content, "html.parser")
                         match_table = match_page.find_all("table")[-1]
                         match_body = match_table.find("tbody")
@@ -240,7 +256,7 @@ def main():
                         for row in match_rows:
                             elements = row.find_all("td")
                             name = elements[1].text.strip()
-                            time = timestring_to_seconds(elements[2].text)
+                            timeset = timestring_to_seconds(elements[2].text)
                             attack = int(elements[3].text)
                             sent = int(elements[4].text)
                             received = int(elements[5].text)
@@ -253,12 +269,12 @@ def main():
                             else:
                                 recordID = int(record["href"].split("/")[-1])
 
-                            multiplayer_list.append((recordID, name, time, attack, sent, received, blocks, b2b))
+                            multiplayer_list.append((recordID, name, timeset, attack, sent, received, blocks, b2b))
                             players_in_games_list.append((matchID, name, recordID))
 
-                            count = count+1
-                            if count > 1:
-                                break
+                        count = count+1
+                        if count > 10:
+                            break
         #insert multiplayer            
         command = '''
         INSERT INTO Multiplayer(recordID, username, gameTime, attack, attackSent, received, piecesDropped, b2b)
