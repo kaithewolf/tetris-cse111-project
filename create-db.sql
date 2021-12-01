@@ -12,7 +12,7 @@ drop table if exists PlayersinMultiplayerGames;
 drop table if exists MapLeaderboard;
 drop table if exists customMap;
 drop table if exists PlayersInMap;
-drop table if exists map_downstack;
+drop table if exists mapDownstack;
 
 --create table
 create table Users(
@@ -78,7 +78,7 @@ create table customMap(
 
 create table PlayersInMap(
  MapID int,
- player varchar(255));
+ RecordID int);
 
 create table MapLeaderboard(
  MapID int,
@@ -96,13 +96,13 @@ create table FinishCondition(
  f_id int primary key,
  f_name varchar(255));
  
-create table map_downstack(
+create table MapDownstack(
  recordID int primary key,
  username varchar(255) ,
  gameTime float,
  date_played date,
- piecesDropped int,
- gameType int);
+ piecesDropped int
+ );
 
 
 --trigger

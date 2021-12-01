@@ -49,6 +49,10 @@ def executemany(_conn, string, tup):
     except Error as e:
         print(e)
 
+def timestring_to_seconds(string):
+    time_text = string.split(":")
+    return float(time_text[-1]) + float(len(time_text)-1)*float(time_text[0])*60
+
 def print_select(_conn, string):
     try:
         cur = _conn.cursor()
@@ -68,7 +72,7 @@ def parse_leaderboard(parsed):
             name = result["name"]
             dateSet = result["ts"].split()[0]
             rank = result["pos"]
-            record = result["game"]
+            record = result["id"]
             parsed_list.append((rank, name, record, dateSet))
             count += 1
             if count > 99:
@@ -129,6 +133,8 @@ def main():
         #Map Leaderboards, grab first n maps
         map_list = []
         map_leaderboard_list = []
+        players_in_maps = []
+        map_downstack_games = []
         for i in range(20):
             #map api
             map_api = requests.get("https://jstris.jezevec10.com/maps/api/"+str(i+1))
@@ -152,20 +158,53 @@ def main():
                 for row in table_rows:
                     elements = row.find_all("td")
                     name = elements[1].text.strip()
-                    time = elements[2]
-                    pieces_placed = elements[3]
+                    time = timestring_to_seconds(elements[2].text)
+                    time_text = elements[2].text.split(":")
+                    time = float(time_text[-1]) + float(len(time_text)-1)*float(time_text[0])*60
+                    pieces = int(elements[3].text.strip())
                     date = elements[6].text.split()[0]
                     record = elements[7].find("a")
-                    if record == None:
-                        record = -1
-                    else:
-                        record = record["href"].split("/")[-1]
-                    map_leaderboard_list.append((map_api_parsed["id"], rank, name, record, date))
+                    if record != None:
+                        recordID = int(record["href"].split("/")[-1])
+                        map_leaderboard_list.append((map_api_parsed["id"], rank, name, time, date))
+                        players_in_maps.append((map_api_parsed["id"], recordID))
+                        map_downstack_games.append((recordID, name, time, date, pieces))
                     rank += 1
-    for tup in map_list:
-        print(tup)
-    for tup in map_leaderboard_list:
-        print(tup)
+                    if rank >= 101:
+                        break
+        #insert map stuff
+        command = '''
+        INSERT INTO customMap(MapID, MapName, createdBy, finishCondition)
+        values
+            (?, ? ,? ,?);
+        '''
+        print("insert customMap:")
+        executemany(conn, command, map_list)
+
+        command = '''
+        INSERT INTO MapLeaderboard(MapID, mapRank, username,record, dateSet)
+        values
+            (?, ? ,? ,?, ?);
+        '''
+        print("insert MapLeaderboard:")
+        executemany(conn, command, map_leaderboard_list)
+
+        command = '''
+        INSERT INTO PlayersinMap(MapID, recordID)
+        values
+            (?, ?);
+        '''
+        print("insert PlayersinMap:")
+        executemany(conn, command, players_in_maps)
+        
+        command = '''
+        INSERT INTO MapDownstack(recordID, username, gameTime, date_played, piecesDropped)
+        values
+            (?, ? ,? ,?, ?);
+        '''
+        print("insert MapDownstack:")
+        executemany(conn, command, map_downstack_games)
+    
 
     closeConnection(conn, database)
 
