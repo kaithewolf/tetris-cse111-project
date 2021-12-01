@@ -63,11 +63,11 @@ create table Multiplayer(
 create table MultiplayerGames(
  MatchID varchar(255),
  roomID varchar(255),
- datePlayed date);
+ date_played date);
 
 create table PlayersinMultiplayerGames(
  MatchID varchar(255),
- listOfPlayers varchar(255),
+ username varchar(255),
  MatchRecord int);
 
 create table customMap(

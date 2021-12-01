@@ -86,7 +86,7 @@ def main():
     conn = openConnection(database)
     with conn:
         #Single Player Leaderboards, top 100 of each
-        sprint_results = requests.get("http://jstris.jezevec10.com/api/leaderboard/1?mode=1&offset=0")
+        sprint_results = requests.get("http://jstris.jezevec10.com/api/leaderboard/1?mode=1&offset=0", stream=True, verify=False)
         sprint_parsed = json.loads(sprint_results.text.encode('utf8'))
         sprint_list = parse_leaderboard(sprint_parsed)
         command = '''
@@ -144,7 +144,7 @@ def main():
 
                 #map leaderboard page
                 #get name of creator
-                map_results = requests.get("https://jstris.jezevec10.com/map/"+str(i+1))
+                map_results = requests.get("https://jstris.jezevec10.com/map/"+str(i+1), stream=True, verify=False)
                 map_page = BeautifulSoup(map_results.content, 'html.parser')
                 map_header = map_page.find("table")
                 name_section = map_header.find_all("tr")[-1]
@@ -220,38 +220,69 @@ def main():
         multiplayer_games_list = []
         for user in userlist:
             for i in range(10):
-                live_games = requests.get("https://jstris.jezevec10.com/api/u/"+user+"/live/games?offset="+str(i*50))
+                offset = i*50
+                live_games = requests.get("https://jstris.jezevec10.com/api/u/"+''.join(user)+"/live/games?offset="+str(offset), stream=True, verify=False)
                 parsed_games = json.loads(live_games.text.encode("utf8"))
-                
-                for j in range(10):
-                    date = parsed_games[j]["gtime"].split()[0]
-                    matchID = parsed_games[j]["gid"]
-                    multiplayer_games_list.append((matchID, parsed_games[j]["cid"], date))
-                    match_result = requests.get("https://jstris.jezevec10.com/games/"+str(matchID))
-                    match_page = BeautifulSoup(match_result.contents, "html.parser")
-                    match_table = match_page.find_all("table")[-1]
-                    match_body = match_table.find("tbody")
-                    match_rows = match_body.find_all("tr")
-                    for row in match_rows:
-                        elements = row.find_all("td")
-                        name = elements[1].text
-                        time = timestring_to_seconds(elements[2].text)
-                        attack = int(elements[3].text)
-                        sent = int(elements[4].text)
-                        received = int(elements[5].text)
-                        b2b = int(elements[6].text)
-                        blocks = int(elements[8])
-                        record = row.find("a")
-                        if record == None:
-                            recordID = null_record
-                            null_record = null_record-1
+                if len(parsed_games) > 0:
+                    count = 0
+                    for game in parsed_games:
+                        if game["gtime"] is not None:
+                            date = game["gtime"].split()[0]
                         else:
-                            recordID = int(record["href"].split("/")[-1])
+                            date = "None"
+                        matchID = game["gid"]
+                        multiplayer_games_list.append((matchID, game["cid"], date))
+                        match_result = requests.get("https://jstris.jezevec10.com/games/"+str(matchID), stream=True, verify=False)
+                        match_page = BeautifulSoup(match_result.content, "html.parser")
+                        match_table = match_page.find_all("table")[-1]
+                        match_body = match_table.find("tbody")
+                        match_rows = match_body.find_all("tr")
+                        for row in match_rows:
+                            elements = row.find_all("td")
+                            name = elements[1].text.strip()
+                            time = timestring_to_seconds(elements[2].text)
+                            attack = int(elements[3].text)
+                            sent = int(elements[4].text)
+                            received = int(elements[5].text)
+                            b2b = int(elements[6].text)
+                            blocks = int(elements[8].text)
+                            record = elements[12].find("a")
+                            if record == None:
+                                recordID = null_record
+                                null_record = null_record-1
+                            else:
+                                recordID = int(record["href"].split("/")[-1])
 
-                        multiplayer_list.append((recordID, name, time, attack, sent, received, blocks, b2b))
-                        players_in_games_list.append((matchID, name, recordID))
-                    
-                    
+                            multiplayer_list.append((recordID, name, time, attack, sent, received, blocks, b2b))
+                            players_in_games_list.append((matchID, name, recordID))
+
+                            count = count+1
+                            if count > 1:
+                                break
+        #insert multiplayer            
+        command = '''
+        INSERT INTO Multiplayer(recordID, username, gameTime, attack, attackSent, received, piecesDropped, b2b)
+        values
+            (?, ? ,? ,?, ?, ?, ?, ?);
+        '''
+        print("insert Multiplayer:")
+        executemany(conn, command, multiplayer_list)
+
+        command = '''
+        INSERT INTO MultiplayerGames(MatchID, username, MatchRecord)
+        values
+            (?, ? ,?);
+        '''
+        print("insert PlayersinMultiplayerGames:")
+        executemany(conn, command, players_in_games_list)
+
+        command = '''
+        INSERT INTO MultiplayerGames(matchID, roomID, date_played)
+        values
+            (?, ? ,?);
+        '''
+        print("insert Multiplayer:")
+        executemany(conn, command, multiplayer_games_list)
 
     closeConnection(conn, database)
 
