@@ -12,6 +12,7 @@ drop table if exists PlayersinMultiplayerGames;
 drop table if exists MapLeaderboard;
 drop table if exists customMap;
 drop table if exists PlayersInMap;
+drop table if exists map_downstack;
 
 --create table
 create table Users(
@@ -94,6 +95,14 @@ create table GameType(
 create table FinishCondition(
  f_id int primary key,
  f_name varchar(255));
+ 
+create table map_downstack(
+ recordID int primary key,
+ username varchar(255) ,
+ gameTime float,
+ date_played date,
+ piecesDropped int,
+ gameType int);
 
 
 --trigger
@@ -110,6 +119,7 @@ BEGIN
     delete from MapLeaderboard where username = old.username;
     delete from customMap where createdBy = old.username;
     delete from PlayersInMap where player = old.username;
+    delete from map_downstack where username = old.username;
 END;
 
 CREATE TRIGGER if not exists update_user
@@ -125,6 +135,7 @@ BEGIN
     update MapLeaderboard set username = new.username where username = old.username;
     update customMap set createdBy = new.username where createdBy = old.username;
     update PlayersInMap set player = new.username where player = old.username;
+    update map_downstack set username = new.username where username = old.username;
 END;
 
 
