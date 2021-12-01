@@ -119,7 +119,6 @@ BEGIN
     delete from MapLeaderboard where username = old.username;
     delete from customMap where createdBy = old.username;
     delete from PlayersInMap where player = old.username;
-    delete from map_downstack where username = old.username;
 END;
 
 CREATE TRIGGER if not exists update_user
@@ -135,7 +134,6 @@ BEGIN
     update MapLeaderboard set username = new.username where username = old.username;
     update customMap set createdBy = new.username where createdBy = old.username;
     update PlayersInMap set player = new.username where player = old.username;
-    update map_downstack set username = new.username where username = old.username;
 END;
 
 
