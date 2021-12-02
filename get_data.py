@@ -144,14 +144,14 @@ def main():
                 api_start = time.time()
                 map_api_parsed = json.loads(map_api.text.encode('utf8'))
                 api_end = time.time()
-                print("get api"+str(i+1)+f" in {api_end - api_start} ")
+                print(f"get api {i+1} in {api_end - api_start} ")
 
                 #map leaderboard page
                 #get name of creator
                 map_timer_start = time.time()
                 map_results = requests.get("https://jstris.jezevec10.com/map/"+str(i+1), stream=True)
                 map_timer_end = time.time()
-                print(f"getmap took: {map_timer_end - map_timer_start} seconds \n")
+                print(f"getmap took: {map_timer_end - map_timer_start} seconds")
                 map_page = BeautifulSoup(map_results.content, 'html.parser')
                 map_header = map_page.find("table")
                 name_section = map_header.find_all("tr")[-1]
@@ -179,7 +179,7 @@ def main():
                     players_in_maps.append((map_api_parsed["id"], recordID))
                     map_downstack_games.append((recordID, name, timeset, date, pieces))
                     rank += 1
-                    if rank >= 101:
+                    if rank >= 50:
                         break
         #insert map stuff
         command = '''
@@ -273,7 +273,7 @@ def main():
                             players_in_games_list.append((matchID, name, recordID))
 
                         count = count+1
-                        if count > 10:
+                        if count > 5:
                             break
         #insert multiplayer            
         command = '''
