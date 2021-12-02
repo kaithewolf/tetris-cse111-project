@@ -1,3 +1,4 @@
+from url_async import run_async
 import requests
 import sqlite3
 import time
@@ -179,7 +180,7 @@ def main():
                     players_in_maps.append((map_api_parsed["id"], recordID))
                     map_downstack_games.append((recordID, name, timeset, date, pieces))
                     rank += 1
-                    if rank >= 50:
+                    if rank >= 51:
                         break
         #insert map stuff
         command = '''
@@ -225,56 +226,68 @@ def main():
         multiplayer_list = []
         players_in_games_list = []
         multiplayer_games_list = []
-        for user in userlist:
-            for i in range(10):
-                offset = i*50
-                api_start = time.time()
-                live_games = requests.get("https://jstris.jezevec10.com/api/u/"+''.join(user)+"/live/games?offset="+str(offset), stream=True)
-                api_end = time.time()
-                print(f"get multi api {user}{i}: {api_end - api_start} seconds")
+        url_list = []
 
-                parsed_games = json.loads(live_games.text.encode("utf8"))
-                if len(parsed_games) > 0:
-                    count = 0
-                    for game in parsed_games:
-                        if game["gtime"] is not None:
-                            date = game["gtime"].split()[0]
+        #if we increment offset as well as user name this will work as well
+        for user in userlist:
+            for i in range(5):
+                offset = i*50
+                url_list.append("https://jstris.jezevec10.com/api/u/"+''.join(user)+"/live/games?offset="+str(offset))
+        
+        match_results = run_async(url_list)
+        results_parsed = []
+
+        #match_results (50 each, n from each user page)
+        for res in match_results:
+            length = len(res)
+            if length > 0:
+                results_parsed.append(json.loads(res))
+        
+        match_list = []
+        jstris_pages = []
+        multiplayer_games_list = []
+        url_list = []
+        count = 0
+        #results 50 parsed, break into each result
+        for result in results_parsed:
+                #parse first n of each page
+                for i in range(5):
+                    if i < len(result):
+                        if result[i]["gtime"] is not None:
+                            date = result[i]["gtime"].split()[0]
                         else:
                             date = "1111-11-11"
-                        matchID = game["gid"]
-                        multiplayer_games_list.append((matchID, game["cid"], date))
+                        
+                        matchID = result[i]["gid"]
+                        multiplayer_games_list.append((matchID, result[i]["cid"], date))
+                        #new links
+                        url_list.append("https://jstris.jezevec10.com/games/"+matchID)
+        
+        jstris_pages = run_async(url_list)
 
-                        api_start = time.time()
-                        match_result = requests.get("https://jstris.jezevec10.com/games/"+str(matchID), stream=True)
-                        api_end = time.time()
-                        print(f"get match page {count}: {api_end - api_start} seconds")
+        for page in jstris_pages:
+            match_page = BeautifulSoup(page, "html.parser")
+            match_table = match_page.find_all("table")[-1]
+            match_body = match_table.find("tbody")
+            match_rows = match_body.find_all("tr")
+            for row in match_rows:
+                elements = row.find_all("td")
+                name = elements[1].text.strip()
+                timeset = timestring_to_seconds(elements[2].text)
+                attack = int(elements[3].text)
+                sent = int(elements[4].text)
+                received = int(elements[5].text)
+                b2b = int(elements[6].text)
+                blocks = int(elements[8].text)
+                record = elements[12].find("a")
+                if record == None:
+                    recordID = null_record
+                    null_record = null_record-1
+                else:
+                    recordID = int(record["href"].split("/")[-1])
 
-                        match_page = BeautifulSoup(match_result.content, "html.parser")
-                        match_table = match_page.find_all("table")[-1]
-                        match_body = match_table.find("tbody")
-                        match_rows = match_body.find_all("tr")
-                        for row in match_rows:
-                            elements = row.find_all("td")
-                            name = elements[1].text.strip()
-                            timeset = timestring_to_seconds(elements[2].text)
-                            attack = int(elements[3].text)
-                            sent = int(elements[4].text)
-                            received = int(elements[5].text)
-                            b2b = int(elements[6].text)
-                            blocks = int(elements[8].text)
-                            record = elements[12].find("a")
-                            if record == None:
-                                recordID = null_record
-                                null_record = null_record-1
-                            else:
-                                recordID = int(record["href"].split("/")[-1])
-
-                            multiplayer_list.append((recordID, name, timeset, attack, sent, received, blocks, b2b))
-                            players_in_games_list.append((matchID, name, recordID))
-
-                        count = count+1
-                        if count > 5:
-                            break
+                multiplayer_list.append((recordID, name, timeset, attack, sent, received, blocks, b2b))
+                players_in_games_list.append((matchID, name, recordID))
         #insert multiplayer            
         command = '''
         INSERT INTO Multiplayer(recordID, username, gameTime, attack, attackSent, received, piecesDropped, b2b)

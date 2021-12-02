@@ -4,6 +4,7 @@ from aiohttp import ClientSession
 
 async def fetch(url, session):
     async with session.get(url) as response:
+        print(url)
         return await response.read()
 
 async def get_results(url_list):
@@ -22,10 +23,6 @@ async def get_results(url_list):
         for response in responses:
             result_list.append(response)
         return result_list
-        #for response in responses:
-        #    page = BeautifulSoup(response, "html.parser")
-        #   title = page.find("title")
-        #    print(repr(title))
 
 def run_async(url_list):
     loop = asyncio.get_event_loop()
