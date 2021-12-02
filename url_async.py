@@ -1,11 +1,26 @@
 import asyncio
 import time
 from aiohttp import ClientSession
+from aiolimiter import AsyncLimiter
+
+limiter = AsyncLimiter(1, 0.2)
 
 async def fetch(url, session):
-    async with session.get(url) as response:
-        print(url)
-        return await response.read()
+    async with limiter:
+        async with session.get(url) as response:
+            #ok
+            if response.status == 200:
+                print(url)
+                return await response.read()
+
+            #too many requests
+            elif response.status == 429:
+                    #retry after some time given by website
+                    retry_after = response.headers.get("retry-after")
+                    print("retry_after "+retry_after)
+                    await asyncio.sleep(float(retry_after))
+                    print("retrying: "+url)
+                    return await fetch(url, session)
 
 async def get_results(url_list):
     # Fetch all responses within one Client session,
