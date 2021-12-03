@@ -52,11 +52,13 @@ def executemany(_conn, string, tup):
         print(e)
 
 def timestring_to_seconds(string):
-    time_text = string.split(":")
-    if time_text[0].isnumeric() and time_text[-1].isnumeric():
-        return float(time_text[-1]) + float(len(time_text)-1)*float(time_text[0])*60
-    else:
-        return 0.0
+    if string != '\n∞\n':
+        string = string.replace(",", "")
+        time_text = string.split(":")
+        try:
+            return float(time_text[-1]) + float(len(time_text)-1)*float(time_text[0])*60
+        except ValueError:
+            return 0
 
 def print_select(_conn, string):
     try:
