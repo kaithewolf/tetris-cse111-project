@@ -53,7 +53,10 @@ def executemany(_conn, string, tup):
 
 def timestring_to_seconds(string):
     time_text = string.split(":")
-    return float(time_text[-1]) + float(len(time_text)-1)*float(time_text[0])*60
+    if time_text[0].isnumeric() and time_text[-1].isnumeric():
+        return float(time_text[-1]) + float(len(time_text)-1)*float(time_text[0])*60
+    else:
+        return 0.0
 
 def print_select(_conn, string):
     try:
@@ -77,7 +80,7 @@ def parse_leaderboard(parsed):
             record = result["id"]
             parsed_list.append((rank, name, record, dateSet))
             count += 1
-            if count > 99:
+            if count > 51:
                 break
         return parsed_list
         
@@ -224,6 +227,128 @@ def main():
         userlist = curs.fetchall()
 
         url_list = []
+        sprint_list = []
+        cheese_list = []
+        ultra_list = []
+        survival_list = []
+
+        #url_list
+        #if we increment offset as well as user name this will work as well
+        for user in userlist:
+            sprint_list.append("https://jstris.jezevec10.com/sprint?display=5&user="+''.join(user))
+            cheese_list.append("https://jstris.jezevec10.com/cheese?display=5&user="+''.join(user))
+            ultra_list.append("https://jstris.jezevec10.com/ultra?display=5&user="+''.join(user))
+            survival_list.append("https://jstris.jezevec10.com/survival?display=5&user="+''.join(user))
+        
+        sprint_results = run_async(sprint_list)
+        cheese_results = run_async(cheese_list)
+        ultra_results = run_async(ultra_list)
+        survival_results = run_async(survival_list)
+        singleplayer_list = []
+        for i in sprint_results:
+            #parse whatever you want
+            page = BeautifulSoup(i, "html.parser")
+            table = page.find_all("table")[-1]
+            body = table.find("tbody")
+            rows = body.find_all("tr")
+            count = 0
+            for row in rows:
+                elements = row.find_all("td")
+                name = elements[1].text.strip()
+                timeset = timestring_to_seconds(elements[2].text)
+                blocks = int(elements[3].text)
+                date = elements[-2].text.split()[0]
+                record = elements[-1].find("a")
+                if record == None:
+                    recordID = null_record
+                    null_record = null_record-1
+                else:
+                    recordID = int(record["href"].split("/")[-1])
+                singleplayer_list.append((recordID, name, timeset, date, blocks, 1))
+                count += 1
+                if count > 50:
+                    break
+
+        for i in cheese_results:
+            #parse whatever you want
+            page = BeautifulSoup(i, "html.parser")
+            table = page.find_all("table")[-1]
+            body = table.find("tbody")
+            rows = body.find_all("tr")
+            count = 0
+            for row in rows:
+                elements = row.find_all("td")
+                name = elements[1].text.strip()
+                timeset = timestring_to_seconds(elements[2].text)
+                blocks = int(elements[3].text)
+                date = elements[-2].text.split()[0]
+                record = elements[-1].find("a")
+                if record == None:
+                    recordID = null_record
+                    null_record = null_record-1
+                else:
+                    recordID = int(record["href"].split("/")[-1])
+                singleplayer_list.append((recordID, name, timeset, date, blocks, 3))
+                count += 1
+                if count > 50:
+                    break
+        
+        
+        for i in survival_results:
+            #parse whatever you want
+            page = BeautifulSoup(i, "html.parser")
+            table = page.find_all("table")[-1]
+            body = table.find("tbody")
+            rows = body.find_all("tr")
+            count = 0
+            for row in rows:
+                elements = row.find_all("td")
+                name = elements[1].text.strip()
+                timeset = timestring_to_seconds(elements[2].text)
+                blocks = int(elements[3].text)
+                date = elements[-2].text.split()[0]
+                record = elements[-1].find("a")
+                if record == None:
+                    recordID = null_record
+                    null_record = null_record-1
+                else:
+                    recordID = int(record["href"].split("/")[-1])
+                singleplayer_list.append((recordID, name, timeset, date, blocks, 4))
+                count += 1
+                if count > 50:
+                    break
+        
+        for i in ultra_results:
+            #parse whatever you want
+            page = BeautifulSoup(i, "html.parser")
+            table = page.find_all("table")[-1]
+            body = table.find("tbody")
+            rows = body.find_all("tr")
+            count = 0
+            for row in rows:
+                elements = row.find_all("td")
+                name = elements[1].text.strip()
+                timeset = timestring_to_seconds(elements[2].text)
+                blocks = int(elements[3].text)
+                date = elements[-2].text.split()[0]
+                record = elements[-1].find("a")
+                if record == None:
+                    recordID = null_record
+                    null_record = null_record-1
+                else:
+                    recordID = int(record["href"].split("/")[-1])
+                singleplayer_list.append((recordID, name, timeset, date, blocks, 5))
+                count += 1
+                if count > 50:
+                    break
+
+        command = '''
+        INSERT OR IGNORE INTO SinglePlayer(recordID, username, gameTime, date_played, piecesDropped, gameType)
+        values
+            (?, ? ,? ,?, ?, ?);
+        '''
+        print("insert singlePlayer:")
+        executemany(conn, command, singleplayer_list)
 
         #if we increment offset as well as user name this will work as well
         #name_list = ["nateqwq", "kaithewolf", "BeeboTheBuilder", "hiryu"]
@@ -292,7 +417,7 @@ def main():
             
         #insert multiplayer            
         command = '''
-        INSERT INTO Multiplayer(recordID, username, gameTime, attack, attackSent, received, piecesDropped, b2b)
+        INSERT OR IGNORE INTO Multiplayer(recordID, username, gameTime, attack, attackSent, received, piecesDropped, b2b)
         values
             (?, ? ,? ,?, ?, ?, ?, ?);
         '''
@@ -300,7 +425,7 @@ def main():
         executemany(conn, command, multiplayer_list)
 
         command = '''
-        INSERT INTO PlayersinMultiplayerGames(MatchID, username, MatchRecord)
+        INSERT OR IGNORE INTO PlayersinMultiplayerGames(MatchID, username, MatchRecord)
         values
             (?, ? ,?);
         '''
@@ -308,7 +433,7 @@ def main():
         executemany(conn, command, players_in_games_list)
 
         command = '''
-        INSERT INTO MultiplayerGames(matchID, roomID, date_played)
+        INSERT OR IGNORE INTO MultiplayerGames(matchID, roomID, date_played)
         values
             (?, ? ,?);
         '''
