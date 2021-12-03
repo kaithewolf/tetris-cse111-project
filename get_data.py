@@ -223,12 +223,10 @@ def main():
         curs.execute(command)
         userlist = curs.fetchall()
 
-        multiplayer_list = []
-        players_in_games_list = []
-        multiplayer_games_list = []
         url_list = []
 
         #if we increment offset as well as user name this will work as well
+        #name_list = ["nateqwq", "kaithewolf", "BeeboTheBuilder", "hiryu"]
         for user in userlist:
             for i in range(5):
                 offset = i*50
@@ -243,11 +241,9 @@ def main():
             if length > 0:
                 results_parsed.append(json.loads(res))
         
-        match_list = []
-        jstris_pages = []
         multiplayer_games_list = []
+        match_list = []
         url_list = []
-        count = 0
         #results 50 parsed, break into each result
         for result in results_parsed:
                 #parse first n of each page
@@ -258,13 +254,18 @@ def main():
                         else:
                             date = "1111-11-11"
                         
-                        matchID = result[i]["gid"]
-                        multiplayer_games_list.append((matchID, result[i]["cid"], date))
+                        match_list.append(result[i]["gid"])
+                        multiplayer_games_list.append((result[i]["gid"], result[i]["cid"], date))
                         #new links
-                        url_list.append("https://jstris.jezevec10.com/games/"+matchID)
+                        url_list.append("https://jstris.jezevec10.com/games/"+result[i]["gid"])
         
+        jstris_pages = []
+        multiplayer_list = []
+        players_in_games_list = []
+
         jstris_pages = run_async(url_list)
 
+        i = 0
         for page in jstris_pages:
             match_page = BeautifulSoup(page, "html.parser")
             match_table = match_page.find_all("table")[-1]
@@ -279,15 +280,16 @@ def main():
                 received = int(elements[5].text)
                 b2b = int(elements[6].text)
                 blocks = int(elements[8].text)
-                record = elements[12].find("a")
+                record = elements[13].find("a")
                 if record == None:
                     recordID = null_record
                     null_record = null_record-1
                 else:
                     recordID = int(record["href"].split("/")[-1])
-
                 multiplayer_list.append((recordID, name, timeset, attack, sent, received, blocks, b2b))
-                players_in_games_list.append((matchID, name, recordID))
+                players_in_games_list.append((match_list[i], name, recordID))
+            i += 1
+            
         #insert multiplayer            
         command = '''
         INSERT INTO Multiplayer(recordID, username, gameTime, attack, attackSent, received, piecesDropped, b2b)
@@ -298,7 +300,7 @@ def main():
         executemany(conn, command, multiplayer_list)
 
         command = '''
-        INSERT INTO MultiplayerGames(MatchID, username, MatchRecord)
+        INSERT INTO PlayersinMultiplayerGames(MatchID, username, MatchRecord)
         values
             (?, ? ,?);
         '''
@@ -310,7 +312,7 @@ def main():
         values
             (?, ? ,?);
         '''
-        print("insert Multiplayer:")
+        print("insert MultiplayerGames:")
         executemany(conn, command, multiplayer_games_list)
 
     closeConnection(conn, database)
