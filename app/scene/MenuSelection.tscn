@@ -10,8 +10,10 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="."]
-margin_right = 49.0
-margin_bottom = 20.0
+margin_left = 30.6662
+margin_top = -0.276703
+margin_right = 174.666
+margin_bottom = 26.7233
 rect_min_size = Vector2( 144, 0 )
 text = "username username"
 __meta__ = {
@@ -19,15 +21,14 @@ __meta__ = {
 }
 
 [node name="Button2" type="Button" parent="."]
-margin_left = 147.0
-margin_top = 0.381042
-margin_right = 174.0
-margin_bottom = 20.381
+margin_left = 1.11018
+margin_right = 26.1102
+margin_bottom = 25.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="X" type="Sprite" parent="Button2"]
-position = Vector2( 14.2065, 10.0999 )
+position = Vector2( 11.7808, 12.5256 )
 scale = Vector2( 0.025158, 0.025158 )
 texture = ExtResource( 1 )

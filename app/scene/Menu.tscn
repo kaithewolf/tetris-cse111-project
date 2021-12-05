@@ -6,9 +6,9 @@
 script = ExtResource( 1 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
-margin_right = 179.0
+margin_right = 188.0
 margin_bottom = 142.0
-scroll_horizontal_enabled = false
+follow_focus = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
