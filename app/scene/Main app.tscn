@@ -87,3 +87,7 @@ __meta__ = {
 
 [node name="Menu2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 252.625, 40.0246 )
+
+[connection signal="button_up" from="No User" to="." method="_on_No_User_button_up"]
+[connection signal="button_up" from="SprintButton" to="." method="_on_SprintButton_button_up"]
+[connection signal="button_up" from="CheeseButton" to="." method="_on_CheeseButton_button_up"]

@@ -16,4 +16,7 @@ func populate_menu(list):
 		select.set_owner(get_tree().get_edited_scene_root())
 	control_obj.add_child(control_node)
 		
-
+func clear_menu():
+	for n in control_obj.get_children():
+		control_obj.remove_child(n)
+		n.queue_free()
