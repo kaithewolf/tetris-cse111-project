@@ -6,8 +6,84 @@
 [node name="Main app" type="Node2D"]
 script = ExtResource( 2 )
 
+[node name="UserLabel" type="Label" parent="."]
+margin_left = 16.706
+margin_top = 29.7535
+margin_right = 61.706
+margin_bottom = 45.7535
+text = "User"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="No User" type="Button" parent="."]
+margin_left = 76.3389
+margin_top = 25.5471
+margin_right = 132.339
+margin_bottom = 45.5471
+keep_pressed_outside = true
+text = "None"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Menu" parent="." instance=ExtResource( 1 )]
-position = Vector2( 12.6003, 0 )
+position = Vector2( 13.3416, 40.0246 )
+
+[node name="SprintButton" type="Button" parent="."]
+margin_left = 242.0
+margin_top = 7.0
+margin_right = 298.0
+margin_bottom = 27.0
+keep_pressed_outside = true
+text = "Sprint"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheeseButton" type="Button" parent="."]
+margin_left = 314.266
+margin_top = 6.58804
+margin_right = 370.266
+margin_bottom = 26.588
+keep_pressed_outside = true
+text = "Cheese"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SurvivalButton" type="Button" parent="."]
+margin_left = 240.514
+margin_top = 31.3768
+margin_right = 301.514
+margin_bottom = 51.3768
+keep_pressed_outside = true
+text = "Survival"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UltraButton" type="Button" parent="."]
+margin_left = 313.373
+margin_top = 30.9648
+margin_right = 372.373
+margin_bottom = 50.9648
+keep_pressed_outside = true
+text = "Ultra"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LiveButton" type="Button" parent="."]
+margin_left = 382.504
+margin_top = 6.27293
+margin_right = 466.504
+margin_bottom = 26.2729
+keep_pressed_outside = true
+text = "Multiplayer"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Menu2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 251.884, 0 )
+position = Vector2( 252.625, 40.0246 )
