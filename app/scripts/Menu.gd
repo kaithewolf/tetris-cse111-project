@@ -16,6 +16,4 @@ func populate_menu(list):
 		select.set_owner(get_tree().get_edited_scene_root())
 	control_obj.add_child(control_node)
 		
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
