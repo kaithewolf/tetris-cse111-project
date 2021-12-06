@@ -7,6 +7,7 @@ onready var other_menu = get_node("Menu2")
 
 var selected_user:String = "none"
 var selected_table:String = "Sprint"
+var selected_item:Dictionary= {}
 var gameType:int = 1
 
 # Declare member variables here. Examples:
@@ -49,11 +50,16 @@ func _ready():
 func update_other_menu():
 	var command:String
 	other_menu.clear_menu()
-	
-	if selected_user == "none":
-		command = "select * from "+selected_table+"_Leaderboard"
+	if selected_table == "Multiplayer":
+		if selected_user == "none":
+			command = "select * from MultiplayerGames;"
+		else:
+			command = "select * from Multiplayer where username = \'"+selected_user+"\';"
 	else:
-		command = "select * from SinglePlayer where username = "+selected_user+" and gameType = "+str(gameType)+";"
+		if selected_user == "none":
+			command = "select * from "+selected_table+"_Leaderboard"
+		else:
+			command = "select * from SinglePlayer where username = \'"+selected_user+"\' and gameType = "+str(gameType)+";"
 	
 	var menu_list = select_from_table(command)
 	other_menu.populate_menu(menu_list)
@@ -85,3 +91,19 @@ func _on_UltraButton_button_up():
 	selected_table = "Ultra"
 	gameType = 5
 	update_other_menu()
+
+
+func _on_LiveButton_button_up():
+	selected_table = "Multiplayer"
+	update_other_menu()
+
+func _on_select_clicked(data, menu_name):
+	if menu_name == "Menu":
+		selected_user = str(data["username"])
+	else:
+		selected_item = data
+	
+	update_other_menu()
+	
+
+	

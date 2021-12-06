@@ -1,6 +1,7 @@
 extends Control
 
-
+signal select_clicked(data, menu)
+var data = {}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,10 +9,12 @@ func _ready():
 
 func set_text(list):
 	$Button.text = str(list)
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	data = list
 
 
 func _on_Button2_button_up():
 	get_parent().remove_child(self)
+
+
+func _on_Button_button_up():
+	emit_signal("select_clicked", data, get_parent().get_parent().get_parent().name)
