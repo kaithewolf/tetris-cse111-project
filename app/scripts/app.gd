@@ -29,13 +29,9 @@ func _ready():
 	db.path = db_path
 	db.open_db()
 	
-	var command = """
-	select * from Users;
-	"""
-	var username_list = select_from_table(command)
-	user_menu.populate_menu(username_list)
+	update_menu()
 	
-	command = """
+	var command = """
 	select * from Sprint_Leaderboard;
 	"""
 	var sprint_list = select_from_table(command)
@@ -48,6 +44,15 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+func update_menu():
+	user_menu.clear_menu()
+	var command = """
+	select * from Users;
+	"""
+	var username_list = select_from_table(command)
+	user_menu.populate_menu(username_list)
+	selected_user = "none"
+	
 func update_other_menu():
 	var command:String
 	other_menu.clear_menu()
@@ -105,8 +110,31 @@ func _on_select_clicked(data, menu_name):
 		UserLabel.text = selected_user
 	else:
 		selected_item = data
-	
 	update_other_menu()
+
+func _on_delete_clicked(data, menu_name):
+	print("delete clicked")
+	var cmd:String
+	if menu_name == "Menu":
+		cmd = "delete from Users where username = \'"+data["username"]+"\';"
+		print("delete User: "+str(db.query_with_bindings(cmd, data["username"])))
+		update_menu()
+		update_other_menu()
+	else:
+		if selected_user != "none":
+			if selected_table == "Multiplayer":
+				cmd = "delete from Multiplayer where recordID = ?;"
+				print("delete Multiplayer: "+str(db.query_with_bindings(cmd, data["recordID"])))
+			else:
+				cmd = "delete from SinglePlayer where recordID = ?;"
+				print("delete Singleplayer: "+str(db.query_with_bindings(cmd, data["recordID"])))
+			
+		elif selected_table == "Multiplayer":
+			cmd = "delete from MultiplayerGames where MatchID = ?;"
+			print("delete MultiplayerGames: "+str(db.query_with_bindings(cmd, data["MatchID"])))
+			
+	update_other_menu()
+
 
 
 func _on_Menu_edit_button_pressed(text, menu_name):

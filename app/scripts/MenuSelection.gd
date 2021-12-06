@@ -1,6 +1,7 @@
 extends Control
 
 signal select_clicked(data, menu)
+signal delete_clicked(data, menu)
 var data = {}
 
 # Called when the node enters the scene tree for the first time.
@@ -13,7 +14,7 @@ func set_text(list):
 
 
 func _on_Button2_button_up():
-	get_parent().remove_child(self)
+	emit_signal("delete_clicked", data, get_parent().get_parent().get_parent().name)
 
 
 func _on_Button_button_up():

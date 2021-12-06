@@ -13,6 +13,7 @@ func populate_menu(list):
 	for tuple in list:
 		var select = selection.instance()
 		select.connect("select_clicked", get_parent(), "_on_select_clicked")
+		select.connect("delete_clicked", get_parent(), "_on_delete_clicked")
 		select.set_text(tuple)
 		control_obj.add_child(select)
 		select.set_owner(get_tree().get_edited_scene_root())
@@ -22,6 +23,8 @@ func clear_menu():
 	for n in control_obj.get_children():
 		control_obj.remove_child(n)
 		n.queue_free()
+	#reinstate last control node
+	control_node = Control.new()
 
 
 func _on_EditButton_button_up():
