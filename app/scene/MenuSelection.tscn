@@ -36,3 +36,5 @@ __meta__ = {
 position = Vector2( 11.7808, 12.5256 )
 scale = Vector2( 0.025158, 0.025158 )
 texture = ExtResource( 1 )
+
+[connection signal="button_up" from="Button2" to="." method="_on_Button2_button_up"]

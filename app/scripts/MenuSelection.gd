@@ -11,3 +11,7 @@ func set_text(list):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_Button2_button_up():
+	get_parent().remove_child(self)
