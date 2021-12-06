@@ -7,6 +7,7 @@ onready var other_menu = get_node("Menu2")
 
 var selected_user:String = "none"
 var selected_table:String = "Sprint"
+var gameType:int = 1
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -45,36 +46,42 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_SprintButton_button_up():
+func update_other_menu():
 	var command:String
-	if selected_user == "none":
-		command = """
-		select * from Sprint_Leaderboard
-		"""
-	else:
-		command = "select * from SinglePlayer where username = "+selected_user+" and gameType = 1;"
-	
 	other_menu.clear_menu()
-	var menu_list = select_from_table(command)
-	other_menu.populate_menu(menu_list)
-
-
-
-func _on_CheeseButton_button_up():
-	var command:String
-	if selected_user == "none":
-		command = """
-		select * from Cheese_Leaderboard
-		"""
-	else:
-		command = "select * from SinglePlayer where username = "+selected_user+" and gameType = 3;"
 	
-	other_menu.clear_menu()
+	if selected_user == "none":
+		command = "select * from "+selected_table+"_Leaderboard"
+	else:
+		command = "select * from SinglePlayer where username = "+selected_user+" and gameType = "+str(gameType)+";"
+	
 	var menu_list = select_from_table(command)
 	other_menu.populate_menu(menu_list)
 
 
 func _on_No_User_button_up():
 	selected_user = "none"
+
+func _on_SprintButton_button_up():
+	selected_table = "Sprint"
+	gameType = 1
+	update_other_menu()
+
+
+func _on_CheeseButton_button_up():
+	selected_table = "Cheese"
+	gameType = 3
+	update_other_menu()
+
+
+
+func _on_SurvivalButton_button_up():
+	selected_table = "Survival"
+	gameType = 4
+	update_other_menu()
+
+
+func _on_UltraButton_button_up():
+	selected_table = "Ultra"
+	gameType = 5
+	update_other_menu()
