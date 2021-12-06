@@ -3,7 +3,8 @@ extends Node2D
 onready var selection = preload("res://scene/MenuSelection.tscn")
 onready var control_obj = get_node("ScrollContainer/Control")
 onready var control_node = Control.new()
-
+signal edit_button_pressed(text, menu_name)
+signal insert_button_pressed(text, menu_name)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -21,3 +22,11 @@ func clear_menu():
 	for n in control_obj.get_children():
 		control_obj.remove_child(n)
 		n.queue_free()
+
+
+func _on_EditButton_button_up():
+	emit_signal("edit_button_pressed", $LineEdit.text, self.name)
+
+
+func _on_InsertButton_button_up():
+	emit_signal("insert_button_pressed", $LineEdit.text, self.name)

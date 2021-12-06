@@ -4,6 +4,7 @@ onready var db_path = "res://tetris.db"
 onready var db 
 onready var user_menu = get_node("Menu")
 onready var other_menu = get_node("Menu2")
+onready var UserLabel = get_node("HBoxContainer/UserLabel")
 
 var selected_user:String = "none"
 var selected_table:String = "Sprint"
@@ -67,6 +68,7 @@ func update_other_menu():
 
 func _on_No_User_button_up():
 	selected_user = "none"
+	update_other_menu()
 
 func _on_SprintButton_button_up():
 	selected_table = "Sprint"
@@ -100,10 +102,24 @@ func _on_LiveButton_button_up():
 func _on_select_clicked(data, menu_name):
 	if menu_name == "Menu":
 		selected_user = str(data["username"])
+		UserLabel.text = selected_user
 	else:
 		selected_item = data
 	
 	update_other_menu()
-	
 
-	
+
+func _on_Menu_edit_button_pressed(text, menu_name):
+	print(menu_name)
+
+
+func _on_Menu_insert_button_pressed(text, menu_name):
+	print(menu_name)
+
+
+func _on_Menu2_edit_button_pressed(text, menu_name):
+	print(menu_name)
+
+
+func _on_Menu2_insert_button_pressed(text, menu_name):
+	print(menu_name)
