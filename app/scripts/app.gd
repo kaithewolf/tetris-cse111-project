@@ -136,20 +136,20 @@ func _on_delete_clicked(data, menu_name):
 			
 	update_other_menu()
 
-
-
-func _on_Menu_edit_button_pressed(text, menu_name):
-	print(menu_name)
-
-
-func _on_Menu_insert_button_pressed(text, menu_name):
-	var arr = [text]
-	var cmd = "insert into Users values(?);"
-	print("insert User: "+str(db.query_with_bindings(cmd, arr)))
-	update_menu()
-
-#edit function syntax:  key:value, key:value ...
-func _on_Menu2_edit_button_pressed(text:String, menu_name):
+func edit_selection(table, text):
+	var key_pairs = len(text.split(":"))
+	if key_pairs % 2 == 1 or key_pairs == 0:
+		print("invalid pairs")
+		return
+		
+	var primary_key:String = ""
+	if table == "Users":
+		primary_key = "username"
+	elif table == "MultiplayerGames":
+		primary_key = "MatchID"
+	else:
+		primary_key = "recordID"
+	
 	var split_text = text.split(",")
 	var text_arr = []
 	for i in split_text:
@@ -164,9 +164,43 @@ func _on_Menu2_edit_button_pressed(text:String, menu_name):
 		key_list.append(i[0])
 		value_list.append(i[1])
 	
-	print(key_list)
-	print(value_list)
+	var cmd_text = "update "+table+" "
+	for i in range(len(key_list)):
+		cmd_text += "set "+key_list[i]+" = ? "
+	cmd_text += "where "+primary_key+" = ? ;"
+	print(cmd_text)
+	
+	if table == "Users":
+		value_list.append(selected_user)
+	else:
+		value_list.append(selected_item[primary_key])
+	
+	print(db.query_with_bindings(cmd_text, value_list))
+	if table == "Users":
+		update_menu()
+	else:
+		update_other_menu()
 
+func _on_Menu_edit_button_pressed(text, menu_name):
+	edit_selection("Users", text)
+
+
+func _on_Menu_insert_button_pressed(text, menu_name):
+	var arr = [text]
+	var cmd = "insert into Users values(?);"
+	print("insert User: "+str(db.query_with_bindings(cmd, arr)))
+	update_menu()
+
+#edit function syntax:  key:value, key:value ...
+func _on_Menu2_edit_button_pressed(text:String, menu_name):
+	if selected_table == "Multiplayer":
+		if selected_user != "none":
+			edit_selection("Multiplayer", text)
+		else:
+			edit_selection("MultiplayerGames", text)
+		
+	else:
+		edit_selection("Singleplayer", text)
 
 func _on_Menu2_insert_button_pressed(text, menu_name):
 	print(menu_name)
