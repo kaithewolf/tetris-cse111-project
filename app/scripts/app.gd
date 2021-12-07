@@ -137,20 +137,26 @@ func _on_delete_clicked(data, menu_name):
 	update_other_menu()
 
 func edit_selection(table, text):
-	var key_pairs = len(text.split(":"))
-	if key_pairs % 2 == 1 or key_pairs == 0:
-		print("invalid pairs")
-		return
-		
+	#check correct number of key:value pairs, or only 1 item
+	var split_text = text.split(",")
+	for i in range(len(split_text)):
+		if split_text[i].count(":") != 1:
+			print("invalid pairs")
+			return
+	
 	var primary_key:String = ""
 	if table == "Users":
 		primary_key = "username"
 	elif table == "MultiplayerGames":
 		primary_key = "MatchID"
 	else:
-		primary_key = "recordID"
+		if selected_item.has("recordID"):
+			primary_key = "recordID"
+		else:
+			print("invalid table")
+			return 
 	
-	var split_text = text.split(",")
+	#split text into each key value pair
 	var text_arr = []
 	for i in split_text:
 		text_arr.append(i.strip_edges())
@@ -164,9 +170,12 @@ func edit_selection(table, text):
 		key_list.append(i[0])
 		value_list.append(i[1])
 	
-	var cmd_text = "update "+table+" "
+	var cmd_text = "update "+table+" set "
 	for i in range(len(key_list)):
-		cmd_text += "set "+key_list[i]+" = ? "
+		if i < len(key_list) - 1:
+			cmd_text += key_list[i]+" = ?, "
+		else:
+			cmd_text += key_list[i]+" = ? "
 	cmd_text += "where "+primary_key+" = ? ;"
 	print(cmd_text)
 	
@@ -202,6 +211,7 @@ func _on_Menu2_edit_button_pressed(text:String, menu_name):
 	else:
 		edit_selection("Singleplayer", text)
 
+#insert syntax: value1, value2, ....
 func _on_Menu2_insert_button_pressed(text, menu_name):
 	var table
 	
