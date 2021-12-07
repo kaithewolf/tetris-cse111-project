@@ -110,6 +110,7 @@ func _on_select_clicked(data, menu_name):
 		UserLabel.text = selected_user
 	else:
 		selected_item = data
+		print(selected_item)
 	update_other_menu()
 
 func _on_delete_clicked(data, menu_name):
@@ -147,9 +148,24 @@ func _on_Menu_insert_button_pressed(text, menu_name):
 	print("insert User: "+str(db.query_with_bindings(cmd, arr)))
 	update_menu()
 
-
-func _on_Menu2_edit_button_pressed(text, menu_name):
-	print(menu_name)
+#edit function syntax:  key:value, key:value ...
+func _on_Menu2_edit_button_pressed(text:String, menu_name):
+	var split_text = text.split(",")
+	var text_arr = []
+	for i in split_text:
+		text_arr.append(i.strip_edges())
+	
+	var key_list = []
+	var value_list = []
+	for i in text_arr:
+		i = i.split(":")
+		i[0] = i[0].strip_edges()
+		i[1] = i[1].strip_edges()
+		key_list.append(i[0])
+		value_list.append(i[1])
+	
+	print(key_list)
+	print(value_list)
 
 
 func _on_Menu2_insert_button_pressed(text, menu_name):
