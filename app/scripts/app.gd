@@ -203,4 +203,29 @@ func _on_Menu2_edit_button_pressed(text:String, menu_name):
 		edit_selection("Singleplayer", text)
 
 func _on_Menu2_insert_button_pressed(text, menu_name):
-	print(menu_name)
+	var table
+	
+	var values_list = text.split(",")
+	for i in range(len(values_list)):
+		values_list[i] = values_list[i].strip_edges()
+	print(values_list)
+	
+	if selected_table == "Multiplayer":
+		if selected_user != "none":
+			table = "Multiplayer"
+		else:
+			table = "MultiplayerGames"
+			
+	else:
+		table = "Singleplayer"
+	
+	var cmd_text = "insert into "+table+" values("
+	for i in range(len(values_list)):
+		if i == len(values_list)-1:
+			cmd_text += "?);"
+		else:
+			cmd_text += "?, "
+	
+	print(db.query_with_bindings(cmd_text, values_list))
+	update_other_menu()
+	
