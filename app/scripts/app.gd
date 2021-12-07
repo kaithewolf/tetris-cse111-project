@@ -142,7 +142,10 @@ func _on_Menu_edit_button_pressed(text, menu_name):
 
 
 func _on_Menu_insert_button_pressed(text, menu_name):
-	print(menu_name)
+	var arr = [text]
+	var cmd = "insert into Users values(?);"
+	print("insert User: "+str(db.query_with_bindings(cmd, arr)))
+	update_menu()
 
 
 func _on_Menu2_edit_button_pressed(text, menu_name):
