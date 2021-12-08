@@ -19,7 +19,7 @@ var date_scale  = ["year","6months", "month", "2week", "week", "day"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	graph_points()
+	pass
 
 func create_axes(xmin, ymin, xmax, ymax):
 	var xscale_value:float
@@ -52,7 +52,7 @@ func create_axes(xmin, ymin, xmax, ymax):
 		var new_label = Label.new()
 		new_label.rect_position = Vector2(float(total_size-min_size)/(max_size-min_size)*x_graph_end+x_offset, 0)
 		new_label.text = str(total_size)
-		add_child(new_label)
+		$runtime.add_child(new_label)
 		new_label.set_owner(self)
 		total_size += xscale_value #increase each position
 		
@@ -65,15 +65,13 @@ func create_axes(xmin, ymin, xmax, ymax):
 	#place each y label 
 	while total_size <= max_size:
 		var new_label = Label.new()
-		new_label.rect_position = Vector2(0, -float(total_size-ymin)/(ymax-ymin)*y_graph_end + y_offset -5)
+		new_label.rect_position = Vector2(0, (-float(total_size-ymin)/(ymax-ymin)*y_graph_end + y_offset -15))
 		new_label.text = str(total_size)
-		add_child(new_label)
+		$runtime.add_child(new_label)
 		new_label.set_owner(self)
 		total_size += yscale_value #increase each position
 	
-func graph_points():
-	var x_list = [1000, 2000, 3400]
-	var y_list = [100, 1000, 900]
+func graph_points(x_list, y_list, data):
 	var xmin = x_list.min()
 	var xmax = x_list.max()
 	var ymin = y_list.min()
@@ -85,9 +83,15 @@ func graph_points():
 		var new_point = point.instance()
 		
 		new_point.position = Vector2(float(x_list[i]-xmin)/(x_axis_end-xmin)*x_graph_end + x_offset, -float(y_list[i]-ymin)/(y_axis_end-ymin)*y_graph_end + y_offset)
-		self.add_child(new_point)
-		new_point.set_owner(self)
+		$runtime.add_child(new_point)
+		new_point.set_owner($runtime)
 		var x_str = x_axis.text+": "+str(x_list[i])
 		var y_str = y_axis.text+": "+str(y_list[i])
 		new_point.set_data(x_str, y_str)
-#	pass
+
+func clear_graph():
+	#delete all points
+	for n in $runtime.get_children():
+			$runtime.remove_child(n)
+			n.queue_free()
+			

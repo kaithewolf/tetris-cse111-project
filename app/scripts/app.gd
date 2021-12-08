@@ -40,11 +40,7 @@ func _ready():
 	other_menu.get_node("ScrollContainer").scroll_horizontal = true
 	pass # Replace with function body.
 
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+#user menu
 func update_menu():
 	user_menu.clear_menu()
 	var command = """
@@ -55,6 +51,7 @@ func update_menu():
 	user_menu.populate_menu(username_list)
 	selected_user = "none"
 	
+#other menu
 func update_other_menu():
 	var command:String
 	other_menu.clear_menu()
@@ -244,3 +241,23 @@ func _on_Menu2_insert_button_pressed(text, menu_name):
 	print(db.query_with_bindings(cmd_text, values_list))
 	update_other_menu()
 	
+
+
+func _on_GraphButton_button_up():
+	$Graph.clear_graph()
+	var data = []
+	var cmd = "select * from SinglePlayer where username = ? and gameType = ?;"
+	var arr = [selected_user, gameType]
+	print(db.query_with_bindings(cmd, arr))
+	
+	for i in range(0, len(db.query_result)):
+		data.append(db.query_result[i])
+	
+	var x_list = []
+	var y_list = []
+	for i in data:
+		x_list.append(i["piecesDropped"])
+		y_list.append(i["gameTime"])
+		print(data)
+	if len(x_list)*len(y_list) != 0:
+		$Graph.graph_points(x_list, y_list, data)
