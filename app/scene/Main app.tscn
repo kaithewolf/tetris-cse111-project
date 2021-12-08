@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scene/Menu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/app.gd" type="Script" id=2]
+[ext_resource path="res://scene/Graph.tscn" type="PackedScene" id=3]
 
 [node name="Main app" type="Node2D"]
 script = ExtResource( 2 )
@@ -102,6 +103,10 @@ __meta__ = {
 
 [node name="Menu2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 252.625, 40.0246 )
+
+[node name="Graph" parent="." instance=ExtResource( 3 )]
+position = Vector2( 449.782, 387.082 )
+scale = Vector2( 0.75, 0.75 )
 
 [connection signal="button_up" from="HBoxContainer/No User" to="." method="_on_No_User_button_up"]
 [connection signal="edit_button_pressed" from="Menu" to="." method="_on_Menu_edit_button_pressed"]
