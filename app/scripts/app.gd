@@ -23,7 +23,16 @@ func select_from_table(command):
 		list.append(db.query_result[i])
 	
 	return list.duplicate()
+
+func select_with_param(command, arr):
+	print(db.query_with_bindings(command, arr))
 	
+	var list = []
+	for i in range(0, db.query_result.size()):
+		list.append(db.query_result[i])
+	
+	return list.duplicate()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	db = Sqlite.new()
@@ -248,11 +257,7 @@ func _on_GraphButton_button_up():
 	var data = []
 	var cmd = "select * from SinglePlayer where username = ? and gameType = ?;"
 	var arr = [selected_user, gameType]
-	print(db.query_with_bindings(cmd, arr))
-	
-	for i in range(0, len(db.query_result)):
-		data.append(db.query_result[i])
-	
+	data = select_with_param(cmd, arr)
 	var x_list = []
 	var y_list = []
 	for i in data:

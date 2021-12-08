@@ -113,11 +113,31 @@ position = Vector2( 648.623, 522.924 )
 scale = Vector2( 0.85, 0.85 )
 
 [node name="GraphButton" type="Button" parent="."]
-margin_left = 38.9433
-margin_top = 392.925
-margin_right = 85.9433
-margin_bottom = 421.925
-text = "graph"
+margin_left = 357.283
+margin_top = 402.343
+margin_right = 458.283
+margin_bottom = 431.343
+text = "MP percentile"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 226.0
+margin_top = 404.0
+margin_right = 325.0
+margin_bottom = 428.0
+text = "MP/SP ratio"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 99.0
+margin_top = 403.0
+margin_right = 167.0
+margin_bottom = 428.0
+text = "Performance"
 __meta__ = {
 "_edit_use_anchors_": false
 }

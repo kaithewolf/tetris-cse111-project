@@ -28,7 +28,6 @@ texture = ExtResource( 2 )
 
 [node name="Data" type="RichTextLabel" parent="."]
 modulate = Color( 1, 0.494118, 0.156863, 1 )
-light_mask = 64
 margin_left = 9.0
 margin_top = -60.0
 margin_right = 168.0
