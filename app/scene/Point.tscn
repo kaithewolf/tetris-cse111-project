@@ -26,5 +26,15 @@ texture = ExtResource( 3 )
 scale = Vector2( 0.00969233, 0.00969233 )
 texture = ExtResource( 2 )
 
+[node name="Data" type="RichTextLabel" parent="."]
+margin_left = 8.81656
+margin_top = -47.3452
+margin_right = 102.817
+margin_bottom = 48.6548
+text = "hello"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="mouse_entered" from="Node2D" to="." method="_on_Node2D_mouse_entered"]
 [connection signal="mouse_exited" from="Node2D" to="." method="_on_Node2D_mouse_exited"]

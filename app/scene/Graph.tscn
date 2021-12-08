@@ -23,7 +23,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
+[node name="x_axis" type="Label" parent="."]
 margin_left = 495.596
 margin_top = 19.4049
 margin_right = 535.596
