@@ -71,7 +71,7 @@ func create_axes(xmin, ymin, xmax, ymax):
 		new_label.set_owner(self)
 		total_size += yscale_value #increase each position
 	
-func graph_points(x_list, y_list, data):
+func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, data):
 	var xmin = x_list.min()
 	var xmax = x_list.max()
 	var ymin = y_list.min()
@@ -79,9 +79,10 @@ func graph_points(x_list, y_list, data):
 	
 	create_axes(xmin, ymin, xmax, ymax)
 	#scale each point onto the graph
+	x_axis.text = x_axis_txt
+	y_axis.text = y_axis_txt
 	for i in range(len(x_list)):
 		var new_point = point.instance()
-		
 		new_point.position = Vector2(float(x_list[i]-xmin)/(x_axis_end-xmin)*x_graph_end + x_offset, -float(y_list[i]-ymin)/(y_axis_end-ymin)*y_graph_end + y_offset)
 		$runtime.add_child(new_point)
 		new_point.set_owner($runtime)

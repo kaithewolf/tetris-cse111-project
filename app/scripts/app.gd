@@ -259,5 +259,9 @@ func _on_GraphButton_button_up():
 		x_list.append(i["piecesDropped"])
 		y_list.append(i["gameTime"])
 	
+	var x_txt = "piecesDropped"
+	var y_txt = "gameTime"
+	if gameType == 5:
+		y_txt = "Score"
 	if len(x_list)*len(y_list) != 0:
-		$Graph.graph_points(x_list, y_list, data)
+		$Graph.graph_points(x_list, y_list, x_txt, y_txt, data)
