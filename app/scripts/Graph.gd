@@ -20,23 +20,29 @@ func _ready():
 	graph_points()
 
 func create_axes(xmin, ymin, xmax, ymax):
-	var scale_value:float
+	var xscale_value:float
+	var yscale_value:float
 	var length = len(number_scale)
 	#find appropriate scale (if it's too small for the large number, go 2 smaller
 	for i in range(length):
 		if xmax - xmin > number_scale[i] and i < length-2:
-			scale_value = number_scale[i+1]
+			xscale_value = number_scale[i+1]
 			break
 		if i == length-1:
-			scale_value = number_scale[i]
-	print(scale_value)
+			xscale_value = number_scale[i]
+	
+	for i in range(length):
+		if ymax - ymin > number_scale[i] and i < length-2:
+			yscale_value = number_scale[i+1]
+			break
+		if i == length-1:
+			yscale_value = number_scale[i]
+	
 	
 	#draw x axis based on scale value
-	var x_axis_pos = []
-	#lowest number
-	var min_size = floor(xmin/scale_value)*scale_value
-	var max_size = ceil(xmax/scale_value)*scale_value
-	var total_size = min_size
+	var min_size = floor(xmin/xscale_value)*xscale_value
+	var max_size = ceil(xmax/xscale_value)*xscale_value
+	var total_size = min_size #start at minimum
 	
 	#place each label
 	while total_size <= max_size:
@@ -45,12 +51,25 @@ func create_axes(xmin, ymin, xmax, ymax):
 		new_label.text = str(total_size)
 		add_child(new_label)
 		new_label.set_owner(self)
-		total_size += scale_value
+		total_size += xscale_value #increase each position
 		
-
+		#draw x axis based on scale value
+	min_size = floor(ymin/yscale_value)*yscale_value
+	max_size = ceil(ymax/yscale_value)*yscale_value
+	total_size = min_size #start at minimum
+	
+	#place each label
+	while total_size <= max_size:
+		var new_label = Label.new()
+		new_label.rect_position = Vector2(0, -float(total_size-ymin)/(ymax-ymin)*y_axis_end + y_offset)
+		new_label.text = str(total_size)
+		add_child(new_label)
+		new_label.set_owner(self)
+		total_size += yscale_value #increase each position
+	
 func graph_points():
-	var x_list = [100, 400, 900]
-	var y_list = [100, 400, 900]
+	var x_list = [102000, 200400, 150500]
+	var y_list = [100, 1000, 900]
 	var xmin = x_list.min()
 	var xmax = x_list.max()
 	var ymin = y_list.min()

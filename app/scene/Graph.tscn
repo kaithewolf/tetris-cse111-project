@@ -14,10 +14,10 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
 
 [node name="y_axis" type="Label" parent="."]
-margin_left = 6.48556
-margin_top = -272.014
-margin_right = 46.4856
-margin_bottom = -258.014
+margin_left = 15.4286
+margin_top = -495.758
+margin_right = 55.4286
+margin_bottom = -481.758
 text = "y axis"
 __meta__ = {
 "_edit_use_anchors_": false
