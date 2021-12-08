@@ -263,5 +263,6 @@ func _on_GraphButton_button_up():
 	var y_txt = "gameTime"
 	if gameType == 5:
 		y_txt = "Score"
+	var title_txt = selected_user+"\'s "+selected_table+" games' "+x_txt+" over "+y_txt
 	if len(x_list)*len(y_list) != 0:
-		$Graph.graph_points(x_list, y_list, x_txt, y_txt, data)
+		$Graph.graph_points(x_list, y_list, x_txt, y_txt, title_txt, data)

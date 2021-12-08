@@ -13,12 +13,26 @@ rotation = -0.000984804
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
 
+[node name="title" type="Label" parent="."]
+margin_left = 467.781
+margin_top = -539.043
+margin_right = 529.781
+margin_bottom = -525.043
+grow_horizontal = 2
+text = "title"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="y_axis" type="Label" parent="."]
-margin_left = -17.446
-margin_top = -497.362
-margin_right = 22.554
-margin_bottom = -483.362
+margin_left = 31.6789
+margin_top = -493.624
+margin_right = 71.6789
+margin_bottom = -479.624
+grow_horizontal = 0
 text = "y axis"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -28,7 +42,9 @@ margin_left = 495.596
 margin_top = 19.4049
 margin_right = 535.596
 margin_bottom = 33.4049
+grow_horizontal = 2
 text = "x axis"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

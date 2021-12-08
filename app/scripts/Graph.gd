@@ -2,6 +2,7 @@ extends Node2D
 onready var point = preload("res://scene/Point.tscn")
 onready var y_axis = get_node("y_axis")
 onready var x_axis = get_node("x_axis")
+onready var title = get_node("title")
 var x_offset = 150*scale[0]
 var y_offset = -50*scale[1]
 #max range of graph, to be mapped onto
@@ -47,11 +48,13 @@ func create_axes(xmin, ymin, xmax, ymax):
 	x_axis_end = max_size
 	var total_size = min_size #start at minimum
 	
-	#place each label
+	#place each x label
 	while total_size <= max_size:
 		var new_label = Label.new()
 		new_label.rect_position = Vector2(float(total_size-min_size)/(max_size-min_size)*x_graph_end+x_offset, 0)
 		new_label.text = str(total_size)
+		new_label.align = Label.ALIGN_CENTER
+		new_label.set_h_grow_direction(2)
 		$runtime.add_child(new_label)
 		new_label.set_owner(self)
 		total_size += xscale_value #increase each position
@@ -65,13 +68,15 @@ func create_axes(xmin, ymin, xmax, ymax):
 	#place each y label 
 	while total_size <= max_size:
 		var new_label = Label.new()
-		new_label.rect_position = Vector2(0, (-float(total_size-ymin)/(ymax-ymin)*y_graph_end + y_offset -10*scale[1]))
+		new_label.rect_position = Vector2(50*scale[1], (-float(total_size-min_size)/(max_size-min_size)*y_graph_end + y_offset))
 		new_label.text = str(total_size)
+		new_label.align = Label.ALIGN_CENTER
+		new_label.set_h_grow_direction(0)
 		$runtime.add_child(new_label)
 		new_label.set_owner(self)
 		total_size += yscale_value #increase each position
 	
-func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, data):
+func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, title_txt:String, data):
 	var xmin = x_list.min()
 	var xmax = x_list.max()
 	var ymin = y_list.min()
@@ -81,6 +86,7 @@ func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, data):
 	#scale each point onto the graph
 	x_axis.text = x_axis_txt
 	y_axis.text = y_axis_txt
+	title.text = title_txt
 	for i in range(len(x_list)):
 		var new_point = point.instance()
 		new_point.position = Vector2(float(x_list[i]-xmin)/(x_axis_end-xmin)*x_graph_end + x_offset, -float(y_list[i]-ymin)/(y_axis_end-ymin)*y_graph_end + y_offset)
