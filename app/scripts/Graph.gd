@@ -2,11 +2,11 @@ extends Node2D
 onready var point = preload("res://scene/Point.tscn")
 onready var y_axis = get_node("y_axis")
 onready var x_axis = get_node("x_axis")
-var x_offset = 150
-var y_offset = -50
+var x_offset = 150*scale[0]
+var y_offset = -50*scale[1]
 #max range of graph, to be mapped onto
-var x_graph_end = 700
-var y_graph_end = 400
+var x_graph_end = 700*scale[0]
+var y_graph_end = 400*scale[1]
 var x_axis_end
 var y_axis_end
 
@@ -65,7 +65,7 @@ func create_axes(xmin, ymin, xmax, ymax):
 	#place each y label 
 	while total_size <= max_size:
 		var new_label = Label.new()
-		new_label.rect_position = Vector2(0, (-float(total_size-ymin)/(ymax-ymin)*y_graph_end + y_offset -15))
+		new_label.rect_position = Vector2(0, (-float(total_size-ymin)/(ymax-ymin)*y_graph_end + y_offset -10*scale[1]))
 		new_label.text = str(total_size)
 		$runtime.add_child(new_label)
 		new_label.set_owner(self)

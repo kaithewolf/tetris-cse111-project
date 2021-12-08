@@ -109,7 +109,7 @@ position = Vector2( 343.521, 54.1568 )
 scale = Vector2( 1.2, 1.2 )
 
 [node name="Graph" parent="." instance=ExtResource( 3 )]
-position = Vector2( 257.758, 543.289 )
+position = Vector2( 648.623, 522.924 )
 scale = Vector2( 0.85, 0.85 )
 
 [node name="GraphButton" type="Button" parent="."]
