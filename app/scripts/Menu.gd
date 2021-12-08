@@ -16,6 +16,7 @@ func populate_menu(list):
 		select.connect("delete_clicked", get_parent(), "_on_delete_clicked")
 		select.set_text(tuple)
 		control_obj.add_child(select)
+		select.set_rect()
 		select.set_owner(get_tree().get_edited_scene_root())
 	control_obj.add_child(control_node)
 		

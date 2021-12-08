@@ -258,6 +258,6 @@ func _on_GraphButton_button_up():
 	for i in data:
 		x_list.append(i["piecesDropped"])
 		y_list.append(i["gameTime"])
-		print(data)
+	
 	if len(x_list)*len(y_list) != 0:
 		$Graph.graph_points(x_list, y_list, data)

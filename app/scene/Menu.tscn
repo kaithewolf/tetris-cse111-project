@@ -46,16 +46,17 @@ __meta__ = {
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 margin_top = 57.0
-margin_right = 443.0
+margin_right = 199.0
 margin_bottom = 273.0
+rect_min_size = Vector2( 210, 216 )
 follow_focus = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Control" type="VBoxContainer" parent="ScrollContainer"]
-margin_right = 443.0
-size_flags_horizontal = 3
+grow_horizontal = 0
+grow_vertical = 2
 custom_constants/separation = 24
 
 [connection signal="button_up" from="EditButton" to="." method="_on_EditButton_button_up"]
