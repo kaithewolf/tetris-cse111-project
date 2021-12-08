@@ -5,6 +5,7 @@ onready var db
 onready var user_menu = get_node("Menu")
 onready var other_menu = get_node("Menu2")
 onready var UserLabel = get_node("HBoxContainer/UserLabel")
+onready var SelectedLabel = get_node("SelectedLabel")
 
 var selected_user:String = "none"
 var selected_table:String = "Sprint"
@@ -47,7 +48,8 @@ func _ready():
 func update_menu():
 	user_menu.clear_menu()
 	var command = """
-	select * from Users;
+	select * from Users
+	order by username ASC;
 	"""
 	var username_list = select_from_table(command)
 	user_menu.populate_menu(username_list)
@@ -73,6 +75,7 @@ func update_other_menu():
 
 func _on_No_User_button_up():
 	selected_user = "none"
+	UserLabel.text = "none"
 	update_other_menu()
 
 func _on_SprintButton_button_up():
@@ -104,6 +107,7 @@ func _on_LiveButton_button_up():
 	selected_table = "Multiplayer"
 	update_other_menu()
 
+#when a selectoin is clicked on
 func _on_select_clicked(data, menu_name):
 	if menu_name == "Menu":
 		selected_user = str(data["username"])
@@ -111,6 +115,7 @@ func _on_select_clicked(data, menu_name):
 	else:
 		selected_item = data
 		print(selected_item)
+		SelectedLabel.text = str(selected_item)
 	update_other_menu()
 
 func _on_delete_clicked(data, menu_name):

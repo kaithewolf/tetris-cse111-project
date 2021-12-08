@@ -32,6 +32,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="SelectedLabel" type="Label" parent="."]
+margin_left = 386.073
+margin_top = 33.0286
+margin_right = 416.073
+margin_bottom = 47.0286
+text = "none"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Menu" parent="." instance=ExtResource( 1 )]
 position = Vector2( 13.3416, 40.0246 )
 
