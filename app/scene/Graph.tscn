@@ -1,3 +1,11 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sprites/black.png" type="Texture" id=1]
 
 [node name="Graph" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 373.366, 229.251 )
+rotation = -0.000984804
+scale = Vector2( 0.459206, 0.459206 )
+texture = ExtResource( 1 )
