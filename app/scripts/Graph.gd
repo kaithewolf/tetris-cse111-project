@@ -5,8 +5,10 @@ onready var x_axis = get_node("x_axis")
 var x_offset = 150
 var y_offset = -50
 #max range of graph, to be mapped onto
-var x_axis_end = 700
-var y_axis_end = 400
+var x_graph_end = 700
+var y_graph_end = 400
+var x_axis_end
+var y_axis_end
 
 var number_scale = [100000, 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1, 0.5, 0.1]
 var date_scale  = ["year","6months", "month", "2week", "week", "day"]
@@ -42,33 +44,35 @@ func create_axes(xmin, ymin, xmax, ymax):
 	#draw x axis based on scale value
 	var min_size = floor(xmin/xscale_value)*xscale_value
 	var max_size = ceil(xmax/xscale_value)*xscale_value
+	x_axis_end = max_size
 	var total_size = min_size #start at minimum
 	
 	#place each label
 	while total_size <= max_size:
 		var new_label = Label.new()
-		new_label.rect_position = Vector2(float(total_size-min_size)/(max_size-min_size)*x_axis_end+x_offset, 0)
+		new_label.rect_position = Vector2(float(total_size-min_size)/(max_size-min_size)*x_graph_end+x_offset, 0)
 		new_label.text = str(total_size)
 		add_child(new_label)
 		new_label.set_owner(self)
 		total_size += xscale_value #increase each position
 		
-		#draw x axis based on scale value
+	#draw y axis based on scale value
 	min_size = floor(ymin/yscale_value)*yscale_value
 	max_size = ceil(ymax/yscale_value)*yscale_value
+	y_axis_end = max_size
 	total_size = min_size #start at minimum
 	
-	#place each label
+	#place each y label 
 	while total_size <= max_size:
 		var new_label = Label.new()
-		new_label.rect_position = Vector2(0, -float(total_size-ymin)/(ymax-ymin)*y_axis_end + y_offset)
+		new_label.rect_position = Vector2(0, -float(total_size-ymin)/(ymax-ymin)*y_graph_end + y_offset -5)
 		new_label.text = str(total_size)
 		add_child(new_label)
 		new_label.set_owner(self)
 		total_size += yscale_value #increase each position
 	
 func graph_points():
-	var x_list = [102000, 200400, 150500]
+	var x_list = [1000, 2000, 3400]
 	var y_list = [100, 1000, 900]
 	var xmin = x_list.min()
 	var xmax = x_list.max()
@@ -80,7 +84,7 @@ func graph_points():
 	for i in range(len(x_list)):
 		var new_point = point.instance()
 		
-		new_point.position = Vector2(float(x_list[i]-xmin)/(xmax-xmin)*x_axis_end + x_offset, -float(y_list[i]-ymin)/(ymax-ymin)*y_axis_end + y_offset)
+		new_point.position = Vector2(float(x_list[i]-xmin)/(x_axis_end-xmin)*x_graph_end + x_offset, -float(y_list[i]-ymin)/(y_axis_end-ymin)*y_graph_end + y_offset)
 		self.add_child(new_point)
 		new_point.set_owner(self)
 		var x_str = x_axis.text+": "+str(x_list[i])
