@@ -15,6 +15,7 @@ var number_scale = [100000, 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1, 0.
 
 #lookup month list index = month
 var month_days_list  = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+var date_scale = [365, 183, 92, 31]
 
 
 # Called when the node enters the scene tree for the first time.
@@ -44,15 +45,22 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 		min_day = int(min_txt[2])
 		max_day = int(max_txt[2])
 		
-	#find appropriate scale (if it's too small for the large number, go 2 smaller
-	for i in range(length):
-		if xmax - xmin > number_scale[i] and i < length-2:
-			xscale_value = number_scale[i+1]
-			break
-		if i == length-1:
-			xscale_value = number_scale[i]
+		for i in range(len(date_scale)-1):
+			if xmax - xmin > date_scale[i] and i < length-2:
+				xscale_value = date_scale[i+1]
+				break
+			if i == length-1:
+				xscale_value = date_scale[i]
+	else:#find appropriate scale (if it's too small for the large number, go 2 smaller
+		for i in range(length):
+			if xmax - xmin > number_scale[i] and i < length-2:
+				xscale_value = number_scale[i+1]
+				break
+			if i == length-1:
+				xscale_value = number_scale[i]
 	
-	for i in range(length):
+	length = len(number_scale)
+	for i in range(length-1):
 		if ymax - ymin > number_scale[i] and i < length-2:
 			yscale_value = number_scale[i+1]
 			break
@@ -88,11 +96,11 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 		new_label.set_owner(self)
 		
 		if len(date_list) > 0:
-			total_size += month_days_list[min_month-1]
+			total_size += xscale_value
 			if min_month < 12:
-				min_month += 1
+				min_month += floor(xscale_value/30)
 			else:
-				min_month = 1
+				min_month = 12-min_month
 				min_year += 1
 		else:
 			total_size += xscale_value #increase each position
@@ -137,7 +145,10 @@ func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, title_tx
 		new_point.set_owner($runtime)
 		var x_str = x_axis.text+": "+str(x_list[i])
 		var y_str = y_axis.text+": "+str(y_list[i])
-		new_point.set_data(x_str, y_str)
+		if len(date_list) > 0:
+			new_point.set_data(date_list[i], y_str)
+		else:
+			new_point.set_data(x_str, y_str)
 
 func clear_graph():
 	#delete all points

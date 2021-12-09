@@ -1,0 +1,2783 @@
+Godot Engine v3.3.3.stable.official.b973f997f - https://godotengine.org
+OpenGL ES 3.0 Renderer: Intel(R) Iris(TM) Graphics 550
+OpenGL ES Batching: ON
+ 
+Registered camera FaceTime HD Camera (Built-in) with id 1 position 0 at index 0
+Opened database successfully (/Users/kylel/Desktop/tetris-cse111-project/app/tetris.db)
+True
+**WARNING**: BaseButton's Enabled Focus Mode property has been deprecated due to redundancy and will be removed in Godot 4.0. Please use Control.set_focus_mode instead.
+   At: scene/gui/base_button.cpp:329:set_enabled_focus_mode() - This method has been deprecated and will be removed in the future.
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+Failed method: Label:_update_minimum_size target ID: 93738
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93739
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93739
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93740
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93740
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93741
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93741
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93742
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93742
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93743
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93743
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93744
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93744
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93745
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93745
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93746
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93746
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93747
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93747
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93748
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93748
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93749
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93749
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93750
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93750
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93751
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93751
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93752
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93752
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93753
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93753
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93754
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93754
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93755
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93755
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93756
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93756
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93757
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93757
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93758
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93758
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93759
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93759
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93760
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93760
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93761
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93761
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93762
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93762
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93763
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93763
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93764
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93764
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93765
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93765
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93766
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93766
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93767
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93767
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93768
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93768
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93769
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93769
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93770
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93770
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93771
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93771
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93772
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93772
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93773
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93773
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93774
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93774
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93775
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93775
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93776
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93776
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93777
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93777
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93778
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93778
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93779
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93779
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93780
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93780
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93781
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93781
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93782
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93782
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93783
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93783
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93784
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93784
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93785
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93785
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93786
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93786
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93787
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93787
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93788
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93788
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93789
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93789
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93790
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93790
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93791
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93791
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93792
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93792
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93793
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93793
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93794
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93794
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93795
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93795
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93796
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93796
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93797
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93797
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93798
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93798
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93799
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93799
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93800
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93800
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93801
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93801
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93802
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93802
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93803
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93803
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93804
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93804
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93805
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93805
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93806
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93806
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93807
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93807
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93808
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93808
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93809
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93809
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93810
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93810
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93811
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93811
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93812
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93812
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93813
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93813
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93814
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93814
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93815
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93815
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93816
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93816
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93817
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93817
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93818
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93818
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93819
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93819
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93820
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93820
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93821
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93821
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93822
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93822
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93823
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93823
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93824
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93824
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93825
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93825
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93826
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93826
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93827
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93827
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93828
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93828
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93829
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93829
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93830
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93830
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93831
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93831
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93832
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93832
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93833
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93833
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93834
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93834
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93835
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93835
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93836
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93836
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93837
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93837
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93838
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93838
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93839
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93839
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93840
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93840
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93841
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93841
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93842
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93842
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93843
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93843
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93844
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93844
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93845
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93845
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93846
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93846
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93847
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93847
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93848
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93848
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93849
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93849
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93850
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93850
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93851
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93851
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93852
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93852
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93853
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93853
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93854
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93854
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93855
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93855
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93856
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93856
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93857
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93857
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93858
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93858
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93859
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93859
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93860
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93860
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93861
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93861
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93862
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93862
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93863
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93863
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93864
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93864
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93865
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93865
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93866
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93866
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93867
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93867
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93868
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93868
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93869
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93869
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93870
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93870
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93871
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93871
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93872
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93872
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93873
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93873
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93874
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93874
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93875
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93875
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93876
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93876
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93877
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93877
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93878
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93878
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93879
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93879
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93880
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93880
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93881
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93881
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93882
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93882
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93883
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93883
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93884
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93884
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93885
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93885
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93886
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93886
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93887
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93887
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93888
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93888
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93889
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93889
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93890
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93890
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93891
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93891
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93892
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93892
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93893
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93893
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93894
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93894
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93895
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93895
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93896
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93896
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93897
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93897
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93898
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93898
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93899
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93899
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93900
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93900
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93901
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93901
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93902
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93902
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93903
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93903
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93904
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93904
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93905
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93905
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93906
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93906
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93907
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93907
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93908
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93908
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93909
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93909
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93910
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93910
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93911
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93911
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93912
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93912
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93913
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93913
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93914
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93914
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93915
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93915
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93916
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93916
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93917
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93917
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93918
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93918
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93919
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93919
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93920
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93920
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93921
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93921
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93922
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93922
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93923
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93923
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93924
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93924
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93925
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93925
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93926
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93926
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93927
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93927
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93928
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93928
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93929
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93929
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93930
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93930
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93931
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93931
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93932
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93932
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93933
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93933
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93934
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93934
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93935
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_minimum_size: 87374
+CALL _update_callback: 87388
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93935

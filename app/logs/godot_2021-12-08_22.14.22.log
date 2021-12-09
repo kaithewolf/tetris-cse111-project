@@ -1,0 +1,167 @@
+Godot Engine v3.3.3.stable.official.b973f997f - https://godotengine.org
+OpenGL ES 3.0 Renderer: Intel(R) Iris(TM) Graphics 550
+OpenGL ES Batching: ON
+ 
+Registered camera FaceTime HD Camera (Built-in) with id 1 position 0 at index 0
+Opened database successfully (/Users/kylel/Desktop/tetris-cse111-project/app/tetris.db)
+True
+**WARNING**: BaseButton's Enabled Focus Mode property has been deprecated due to redundancy and will be removed in Godot 4.0. Please use Control.set_focus_mode instead.
+   At: scene/gui/base_button.cpp:329:set_enabled_focus_mode() - This method has been deprecated and will be removed in the future.
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+Failed method: Label:_update_minimum_size target ID: 93359
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93360
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93360
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93361
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93361
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93362
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93362
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93363
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93363
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93364
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93364
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93365
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93365
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93366
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93366
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93367
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93367
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93368
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93368
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_callback target ID: 93369
+TOTAL BYTES: 4194288
+NULL count: 0
+CALL _update_callback: 87388
+CALL _update_minimum_size: 87374
+**ERROR**: Message queue out of memory. Try increasing 'memory/limits/message_queue/max_size_kb' in project settings.
+   At: core/message_queue.cpp:55:push_call() - Method failed. Returning: ERR_OUT_OF_MEMORY
+Failed method: Label:_update_minimum_size target ID: 93369

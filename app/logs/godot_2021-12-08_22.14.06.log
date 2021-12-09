@@ -1,0 +1,10 @@
+Godot Engine v3.3.3.stable.official.b973f997f - https://godotengine.org
+OpenGL ES 3.0 Renderer: Intel(R) Iris(TM) Graphics 550
+OpenGL ES Batching: ON
+ 
+Registered camera FaceTime HD Camera (Built-in) with id 1 position 0 at index 0
+Opened database successfully (/Users/kylel/Desktop/tetris-cse111-project/app/tetris.db)
+True
+**WARNING**: BaseButton's Enabled Focus Mode property has been deprecated due to redundancy and will be removed in Godot 4.0. Please use Control.set_focus_mode instead.
+   At: scene/gui/base_button.cpp:329:set_enabled_focus_mode() - This method has been deprecated and will be removed in the future.
+True
