@@ -291,13 +291,18 @@ func _on_GraphButton_button_up():
 		selected_table = "Multiplayer"
 		cmd = "select min(julianday(date_played)) as mindate from Multiplayer m, PlayersinMultiplayerGames pmg, MultiplayerGames mg where m.username = ? and m.recordID = pmg.MatchRecord and pmg.MatchID = mg.MatchID;"
 		arr = [selected_user]
-		
+	
 	data = select_with_param(cmd, arr)
 	
-	if selected_table != "Multiplayer":
-		cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" from Singleplayer where username = ? and gameType = ? group by date order by date asc;"
+	if selected_graph != "percentile":
+		if selected_table != "Multiplayer":
+			cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" from Singleplayer where username = ? and gameType = ? group by date order by date asc;"
+		else:
+			cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" from Multiplayer m, PlayersinMultiplayerGames pmg, MultiplayerGames mg where m.username = ? and m.recordID = pmg.MatchRecord and pmg.MatchID = mg.MatchID;"
 	else:
-		cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" from Multiplayer m, PlayersinMultiplayerGames pmg, MultiplayerGames mg where m.username = ? and m.recordID = pmg.MatchRecord and pmg.MatchID = mg.MatchID;"
+		selected_table = "Multiplayer"
+		cmd = "SELECT DISTINCT Multiplayer.username, ?, 1 - PERCENT_RANK() OVER (ORDER BY ? DESC) AS percentile FROM Multiplayer;"
+		arr = [y_axis]
 	arr = [selected_user, gameType]
 	data = select_with_param(cmd, arr)
 	var x_list = []
