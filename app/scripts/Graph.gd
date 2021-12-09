@@ -59,23 +59,43 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 		if i == length-1:
 			yscale_value = number_scale[i]
 	
-	
+	var min_size
+	var max_size
+	var total_size
 	#draw x axis based on scale value
-	var min_size = floor(xmin/xscale_value)*xscale_value
-	var max_size = ceil(xmax/xscale_value)*xscale_value
+	if len(date_list) > 0:
+		min_size = min_day - month_days_list[min_month-1]
+		max_size = month_days_list[max_month-1] - max_day + xmax
+	else:
+		min_size = floor(xmin/xscale_value)*xscale_value
+		max_size = ceil(xmax/xscale_value)*xscale_value
+		
 	x_axis_end = max_size
-	var total_size = min_size #start at minimum
+	total_size = min_size #start at minimum
 	
 	#place each x label
 	while total_size <= max_size:
 		var new_label = Label.new()
 		new_label.rect_position = Vector2(float(total_size-min_size)/(max_size-min_size)*x_graph_end+x_offset, 0)
-		new_label.text = str(total_size)
+		
+		if len(date_list) > 0:
+			new_label.text = str(min_year)+"-"+str(min_month)+"-1"
+		else:
+			new_label.text = str(total_size)
 		new_label.align = Label.ALIGN_CENTER
 		new_label.set_h_grow_direction(2)
 		$runtime.add_child(new_label)
 		new_label.set_owner(self)
-		total_size += xscale_value #increase each position
+		
+		if len(date_list) > 0:
+			total_size += month_days_list[min_month-1]
+			if min_month < 12:
+				min_month += 1
+			else:
+				min_month = 1
+				min_year += 1
+		else:
+			total_size += xscale_value #increase each position
 		
 	#draw y axis based on scale value
 	min_size = floor(ymin/yscale_value)*yscale_value
