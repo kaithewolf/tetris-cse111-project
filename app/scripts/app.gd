@@ -304,6 +304,9 @@ func _on_PerformanceButton_button_up():
 	reset_buttons()
 	for n in $PerformanceButton.get_children():
 		n.visible = true
+	if selected_table != "Multiplayer":
+		for n in $PerformanceButton/MultiplayerButtons.get_children():
+			n.visible = false
 
 
 func _on_PercentileButton_button_up():

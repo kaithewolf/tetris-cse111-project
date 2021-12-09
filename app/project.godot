@@ -11,3 +11,8 @@ config_version=4
 [application]
 
 run/main_scene="res://scene/Main app.tscn"
+
+[memory]
+
+limits/message_queue/max_size_kb=8192
+limits/command_queue/multithreading_queue_size_kb=512
