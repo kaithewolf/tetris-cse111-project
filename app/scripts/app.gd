@@ -326,8 +326,10 @@ func _on_GraphButton_button_up():
 	var x_list = []
 	var y_list = []
 	for i in data:
-		x_list.append(i[x_axis])
-		y_list.append(i[y_title])
+		if x_axis == "date":
+			if str(i[x_axis]) != "1111-11-11":
+				x_list.append(i[x_axis])
+				y_list.append(i[y_title])
 	
 	var x_txt = x_axis
 	var y_txt = y_title
