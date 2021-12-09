@@ -269,7 +269,7 @@ func _on_GraphButton_button_up():
 	arr = [selected_user, gameType]
 	data = select_with_param(cmd, arr)
 	
-	cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, "+y_axis+" from Singleplayer where username = ? and gameType = ? group by date order by date desc;"
+	cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" from Singleplayer where username = ? and gameType = ? group by date order by date asc;"
 	arr = [selected_user, gameType]
 	data = select_with_param(cmd, arr)
 	var x_list = []

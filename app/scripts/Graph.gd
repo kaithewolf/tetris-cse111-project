@@ -21,10 +21,29 @@ var month_days_list  = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 func _ready():
 	pass
 
-func create_axes(xmin, ymin, xmax, ymax):
+func create_axes(xmin, ymin, xmax, ymax, date_list):
 	var xscale_value:float
 	var yscale_value:float
 	var length = len(number_scale)
+	
+	var min_year
+	var max_year
+	var min_month
+	var max_month
+	var min_day
+	var max_day
+	
+	if len(date_list) > 0:
+		var min_txt = date_list[0].split("-")
+		var max_txt = date_list[-1].split("-")
+		
+		min_year = int(min_txt[0])
+		max_year = int(max_txt[0])
+		min_month = int(min_txt[1])
+		max_month = int(max_txt[1])
+		min_day = int(min_txt[2])
+		max_day = int(max_txt[2])
+		
 	#find appropriate scale (if it's too small for the large number, go 2 smaller
 	for i in range(length):
 		if xmax - xmin > number_scale[i] and i < length-2:
@@ -81,7 +100,12 @@ func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, title_tx
 	var ymin = y_list.min()
 	var ymax = y_list.max()
 	
-	create_axes(xmin, ymin, xmax, ymax)
+	var date_list = []
+	if "date_played" in data[0]:
+		for i in data:
+			date_list.append(i["date_played"])
+	
+	create_axes(xmin, ymin, xmax, ymax, date_list)
 	#scale each point onto the graph
 	x_axis.text = x_axis_txt
 	y_axis.text = y_axis_txt
