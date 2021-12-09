@@ -132,7 +132,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ap" type="Button" parent="PercentileButton"]
+[node name="received" type="Button" parent="PercentileButton"]
 anchor_bottom = 3.521
 margin_left = -9.04636
 margin_top = 55.8854
@@ -173,7 +173,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="apb2" type="Button" parent="PercentileButton"]
+[node name="apbppb" type="Button" parent="PercentileButton"]
 margin_left = -252.924
 margin_top = 54.1843
 margin_right = -166.924
@@ -183,7 +183,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="pps" type="Button" parent="PercentileButton"]
+[node name="mppsspps" type="Button" parent="PercentileButton"]
 margin_left = -139.924
 margin_top = 55.1037
 margin_right = -34.9236
@@ -203,7 +203,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="apb" type="Button" parent="RatioButton"]
+[node name="apbppb" type="Button" parent="RatioButton"]
 margin_left = -121.104
 margin_top = 52.5635
 margin_right = -35.1037
@@ -213,7 +213,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="pps" type="Button" parent="RatioButton"]
+[node name="mppsspps" type="Button" parent="RatioButton"]
 margin_left = -8.1037
 margin_top = 52.9427
 margin_right = 96.8963
@@ -311,5 +311,19 @@ __meta__ = {
 [connection signal="insert_button_pressed" from="Menu2" to="." method="_on_Menu2_insert_button_pressed"]
 [connection signal="button_up" from="GraphButton" to="." method="_on_GraphButton_button_up"]
 [connection signal="button_up" from="PercentileButton" to="." method="_on_PercentileButton_button_up"]
+[connection signal="button_up" from="PercentileButton/received" to="." method="_on_received_button_up"]
+[connection signal="button_up" from="PercentileButton/apm" to="." method="_on_apm_button_up"]
+[connection signal="button_up" from="PercentileButton/apb" to="." method="_on_apb_button_up"]
+[connection signal="button_up" from="PercentileButton/b2b" to="." method="_on_b2b_button_up"]
+[connection signal="button_up" from="PercentileButton/apbppb" to="." method="_on_apbppb_button_up"]
+[connection signal="button_up" from="PercentileButton/mppsspps" to="." method="_on_mppsspps_button_up"]
 [connection signal="button_up" from="RatioButton" to="." method="_on_RatioButton_button_up"]
+[connection signal="button_up" from="RatioButton/apbppb" to="." method="_on_apbppb_button_up"]
+[connection signal="button_up" from="RatioButton/mppsspps" to="." method="_on_mppsspps_button_up"]
 [connection signal="button_up" from="PerformanceButton" to="." method="_on_PerformanceButton_button_up"]
+[connection signal="button_up" from="PerformanceButton/SingleplayerButtons/gameTime" to="." method="_on_gameTime_button_up"]
+[connection signal="button_up" from="PerformanceButton/SingleplayerButtons/pps" to="." method="_on_pps_button_up"]
+[connection signal="button_up" from="PerformanceButton/SingleplayerButtons/piecesDropped" to="." method="_on_piecesDropped_button_up"]
+[connection signal="button_up" from="PerformanceButton/MultiplayerButtons/apm" to="." method="_on_apm_button_up"]
+[connection signal="button_up" from="PerformanceButton/MultiplayerButtons/apb" to="." method="_on_apb_button_up"]
+[connection signal="button_up" from="PerformanceButton/MultiplayerButtons/b2b" to="." method="_on_b2b_button_up"]

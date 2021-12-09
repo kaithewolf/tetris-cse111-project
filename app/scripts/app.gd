@@ -314,4 +314,39 @@ func _on_PercentileButton_button_up():
 		n.visible = true
 	x_axis = "percentile"
 
-	
+
+
+func _on_gameTime_button_up():
+	pass # Replace with function body.
+
+
+func _on_pps_button_up():
+	pass # Replace with function body.
+
+
+func _on_piecesDropped_button_up():
+	pass # Replace with function body.
+
+
+func _on_apm_button_up():
+	pass # Replace with function body.
+
+
+func _on_apb_button_up():
+	pass # Replace with function body.
+
+
+func _on_b2b_button_up():
+	pass # Replace with function body.
+
+
+func _on_apbppb_button_up():
+	pass # Replace with function body.
+
+
+func _on_mppsspps_button_up():
+	pass # Replace with function body.
+
+
+func _on_received_button_up():
+	pass # Replace with function body.
