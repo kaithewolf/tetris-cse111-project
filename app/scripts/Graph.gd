@@ -79,7 +79,9 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 		min_size = floor(xmin/xscale_value)*xscale_value
 	
 	max_size = ceil(xmax/xscale_value)*xscale_value
-		
+	
+	if max_size == min_size:
+		max_size += 1
 	x_axis_end = max_size
 	total_size = min_size #start at minimum
 	
@@ -109,6 +111,8 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 	#draw y axis based on scale value
 	min_size = floor(ymin/float(yscale_value))*yscale_value
 	max_size = ceil(ymax/yscale_value)*yscale_value
+	if max_size == min_size:
+		max_size += 1
 	y_axis_end = max_size
 	total_size = min_size #start at minimum
 	
@@ -129,27 +133,37 @@ func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, title_tx
 	var ymin = y_list.min()
 	var ymax = y_list.max()
 	
+	if ymin == null:
+		ymin = 0
+	if ymax == null:
+		ymax = ymin+1
+	
 	var date_list = []
 	if "date_played" in data[0]:
 		for i in data:
 			date_list.append(i["date_played"])
 	
 	create_axes(xmin, ymin, xmax, ymax, date_list)
+	if x_axis_end == xmin:
+		x_axis_end += 1
+	if y_axis_end == ymin:
+		y_axis_end += 1
 	#scale each point onto the graph
 	x_axis.text = x_axis_txt
 	y_axis.text = y_axis_txt
 	title.text = title_txt
 	for i in range(len(x_list)):
 		var new_point = point.instance()
-		new_point.position = Vector2(float(x_list[i]-xmin)/(x_axis_end-xmin)*x_graph_end + x_offset, -float(y_list[i]-ymin)/(y_axis_end-ymin)*y_graph_end + y_offset)
-		$runtime.add_child(new_point)
-		new_point.set_owner($runtime)
-		var x_str = x_axis.text+": "+str(x_list[i])
-		var y_str = y_axis.text+": "+str(y_list[i])
-		if len(date_list) > 0:
-			new_point.set_data(date_list[i], y_str)
-		else:
-			new_point.set_data(x_str, y_str)
+		if x_list[i] != null and y_list[i] != null:
+			new_point.position = Vector2(float(x_list[i]-xmin)/(x_axis_end-xmin)*x_graph_end + x_offset, -float(y_list[i]-ymin)/(y_axis_end-ymin)*y_graph_end + y_offset)
+			$runtime.add_child(new_point)
+			new_point.set_owner($runtime)
+			var x_str = x_axis.text+": "+str(x_list[i])
+			var y_str = y_axis.text+": "+str(y_list[i])
+			if len(date_list) > 0:
+				new_point.set_data(date_list[i], y_str)
+			else:
+				new_point.set_data(x_str, y_str)
 
 func clear_graph():
 	#delete all points
