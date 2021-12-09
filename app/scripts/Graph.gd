@@ -109,7 +109,6 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 			var years_passed = floor(xscale_value/year_days)
 			min_year += years_passed
 			remaining_days -= years_passed * year_days
-			
 			#how many months
 			while remaining_days >= month_days_list[min_month-1]:
 				remaining_days -= month_days_list[min_month-1]
@@ -117,7 +116,6 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 				if min_month > 12:
 					min_month = 1
 					min_year += 1
-			
 			#how many days
 			#fits neatly within month
 			if remaining_days+min_day <= month_days_list[min_month-1]:

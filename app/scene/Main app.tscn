@@ -49,6 +49,16 @@ __meta__ = {
 position = Vector2( 66.4556, 59.1895 )
 scale = Vector2( 1.2, 1.2 )
 
+[node name="MapButton" type="Button" parent="."]
+margin_left = 577.401
+margin_top = 7.07981
+margin_right = 652.401
+margin_bottom = 27.0798
+text = "MapDownstack"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="SprintButton" type="Button" parent="."]
 margin_left = 335.633
 margin_top = 8.16315
@@ -302,6 +312,7 @@ __meta__ = {
 [connection signal="button_up" from="HBoxContainer/No User" to="." method="_on_No_User_button_up"]
 [connection signal="edit_button_pressed" from="Menu" to="." method="_on_Menu_edit_button_pressed"]
 [connection signal="insert_button_pressed" from="Menu" to="." method="_on_Menu_insert_button_pressed"]
+[connection signal="button_up" from="MapButton" to="." method="_on_MapButton_button_up"]
 [connection signal="button_up" from="SprintButton" to="." method="_on_SprintButton_button_up"]
 [connection signal="button_up" from="CheeseButton" to="." method="_on_CheeseButton_button_up"]
 [connection signal="button_up" from="SurvivalButton" to="." method="_on_SurvivalButton_button_up"]

@@ -76,6 +76,11 @@ func update_other_menu():
 			command = "select * from MultiplayerGames;"
 		else:
 			command = "select * from Multiplayer where username = \'"+selected_user+"\';"
+	elif selected_table == "MapDownstack":
+		if selected_user == "none":
+			command = "select * from CustomMap;"
+		else:
+			command = "select * from MapDownstack where username = \'"+selected_user+"\';"
 	else:
 		if selected_user == "none":
 			command = "select * from "+selected_table+"_Leaderboard"
@@ -130,6 +135,9 @@ func _on_LiveButton_button_up():
 		_on_PerformanceButton_button_up()
 	update_other_menu()
 
+func _on_MapButton_button_up():
+	selected_table = "MapDownstack"
+	update_other_menu()
 #when a selectoin is clicked on
 func _on_select_clicked(data, menu_name):
 	if menu_name == "Menu":
@@ -153,6 +161,9 @@ func _on_delete_clicked(data, menu_name):
 		if selected_user != "none":
 			if selected_table == "Multiplayer":
 				cmd = "delete from Multiplayer where recordID = ?;"
+				print("delete Multiplayer: "+str(db.query_with_bindings(cmd, data["recordID"])))
+			elif selected_table == "MapDownstack":
+				cmd = "delete from MapDownstack where recordID = ?;"
 				print("delete Multiplayer: "+str(db.query_with_bindings(cmd, data["recordID"])))
 			else:
 				cmd = "delete from SinglePlayer where recordID = ?;"
@@ -235,6 +246,9 @@ func _on_Menu2_edit_button_pressed(text:String, menu_name):
 			edit_selection("Multiplayer", text)
 		else:
 			edit_selection("MultiplayerGames", text)
+			
+	elif selected_table == "MapDownstack":
+		edit_selection("MaptDownstack", text)
 		
 	else:
 		edit_selection("Singleplayer", text)
@@ -410,3 +424,6 @@ func _on_mppsspps_button_up():
 func _on_received_button_up():
 	y_axis = "received"
 	y_title = "lines_received"
+
+
+
