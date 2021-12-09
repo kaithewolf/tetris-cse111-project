@@ -264,12 +264,11 @@ func _on_GraphButton_button_up():
 	#if len(y_axis)*len(x_axis) == 0:
 	#	return
 	
-	if x_axis == "percentile":
-		cmd = "SELECT * FROM Multiplayer;"
-		x_axis = "attack"
-		y_axis = "b2b"
-	
-	data = select_from_table(cmd)
+	x_axis = "piecesDropped"
+	y_axis = "gameTime"
+	cmd = "select * from Multiplayer;"
+	arr = [selected_user]
+	data = select_with_param(cmd, arr)
 	var x_list = []
 	var y_list = []
 	for i in data:
