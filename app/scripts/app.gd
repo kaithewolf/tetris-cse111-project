@@ -16,6 +16,7 @@ var gameType:int = 1
 
 var x_axis:String
 var y_axis:String
+var y_title:String
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -274,45 +275,48 @@ func _on_GraphButton_button_up():
 	var cmd:String
 	#if len(y_axis)*len(x_axis) == 0:
 	#	return
-	if selected_graph == "performance" or selected_graph == "ratio":
-		x_axis = "date"
-	else:
-		x_axis = "percentile"
-	
-	if selected_graph == "performance":
-		if selected_table != "Multiplayer":
-			cmd = "select min(julianday(date_played)) as mindate from Singleplayer where username = ? and gameType = ?;"
-			arr = [selected_user, gameType]
+	if selected_graph != "none":
+		if selected_graph == "performance" or selected_graph == "ratio":
+			x_axis = "date"
 		else:
+			x_axis = "percentile"
+		
+		if selected_graph == "performance":
+			if selected_table != "Multiplayer":
+				cmd = "select min(julianday(date_played)) as mindate from Singleplayer where username = ? and gameType = ?;"
+				arr = [selected_user, gameType]
+			else:
+				cmd = "select min(julianday(date_played)) as mindate from Multiplayer m, PlayersinMultiplayerGames pmg, MultiplayerGames mg where m.username = ? and m.recordID = pmg.MatchRecord and pmg.MatchID = mg.MatchID;"
+				arr = [selected_user]
+				
+		elif selected_graph == "ratio":
+			selected_table = "Multiplayer"
 			cmd = "select min(julianday(date_played)) as mindate from Multiplayer m, PlayersinMultiplayerGames pmg, MultiplayerGames mg where m.username = ? and m.recordID = pmg.MatchRecord and pmg.MatchID = mg.MatchID;"
 			arr = [selected_user]
-			
-	elif selected_graph == "ratio":
-		selected_table = "Multiplayer"
-		cmd = "select min(julianday(date_played)) as mindate from Multiplayer m, PlayersinMultiplayerGames pmg, MultiplayerGames mg where m.username = ? and m.recordID = pmg.MatchRecord and pmg.MatchID = mg.MatchID;"
-		arr = [selected_user]
-	
-	data = select_with_param(cmd, arr)
-	
-	if selected_graph != "percentile":
-		if selected_table != "Multiplayer":
-			cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" from Singleplayer where username = ? and gameType = ? group by date order by date asc;"
+		
+		data = select_with_param(cmd, arr)
+		
+		if selected_graph != "percentile":
+			if selected_table != "Multiplayer":
+				cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" as "+y_title+" from Singleplayer where username = ? and gameType = ? group by date order by date asc;"
+				arr = [selected_user, gameType]
+			else:
+				cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" as "+y_title+" from Multiplayer m, PlayersinMultiplayerGames pmg, MultiplayerGames mg where m.username = ? and m.recordID = pmg.MatchRecord and pmg.MatchID = mg.MatchID;"
+				arr = [selected_user, gameType]
 		else:
-			cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, date_played, "+y_axis+" from Multiplayer m, PlayersinMultiplayerGames pmg, MultiplayerGames mg where m.username = ? and m.recordID = pmg.MatchRecord and pmg.MatchID = mg.MatchID;"
-	else:
-		selected_table = "Multiplayer"
-		cmd = "SELECT DISTINCT Multiplayer.username, ?, 1 - PERCENT_RANK() OVER (ORDER BY ? DESC) AS percentile FROM Multiplayer;"
-		arr = [y_axis]
-	arr = [selected_user, gameType]
+			selected_table = "Multiplayer"
+			cmd = "SELECT DISTINCT Multiplayer.username, "+y_axis+" as "+y_title+", 1 - PERCENT_RANK() OVER (ORDER BY "+y_axis+" DESC) AS percentile FROM Multiplayer;"
+			print(cmd)
+			arr = [y_axis, y_axis]
 	data = select_with_param(cmd, arr)
 	var x_list = []
 	var y_list = []
 	for i in data:
 		x_list.append(i[x_axis])
-		y_list.append(i[y_axis])
+		y_list.append(i[y_title])
 	
 	var x_txt = x_axis
-	var y_txt = y_axis
+	var y_txt = y_title
 	if gameType == 5:
 		y_txt = "Score"
 	var title_txt = selected_user+"\'s "+selected_table+" games' "+x_txt+" over "+y_txt
@@ -355,28 +359,31 @@ func _on_PercentileButton_button_up():
 
 func _on_gameTime_button_up():
 	y_axis = "gameTime"
-
+	y_title = "game_time"
 
 func _on_pps_button_up():
 	y_axis = "piecesDropped/gameTime"
+	y_title = "piecesDropped_per_second"
 	
 
 
 func _on_piecesDropped_button_up():
 	y_axis = "piecesDropped"
-
+	y_title = "pieces_dropped"
 
 func _on_apm_button_up():
 	y_axis = "CAST( CAST (attack as float) /gameTime as float) * 60"
+	y_title = "attack_per_minute"
 
 
 func _on_apb_button_up():
 	y_axis = "CAST( CAST( attack as float)/piecesDropped as float)"
+	y_title = "attack_per_block"
 
 
 func _on_b2b_button_up():
 	y_axis = "b2b"
-
+	y_title = "back_to_back"
 
 func _on_apbppb_button_up():
 	var ppb = []
@@ -386,7 +393,7 @@ func _on_apbppb_button_up():
 	ppb = select_with_param(cmd, arr)
 	
 	y_axis = "CAST( attack as float)/piecesDropped/"+ str(ppb[0]["ppb"])
-
+	y_title = "mp_over_sp_apb"
 
 func _on_mppsspps_button_up():
 	var spps = []
@@ -396,7 +403,9 @@ func _on_mppsspps_button_up():
 	spps = select_with_param(cmd, arr)
 	
 	y_axis = "CAST(piecesDropped as float)/gameTime/"+str(spps[0]["pps"])
+	y_title = "mp_over_sp_pps"
 
 
 func _on_received_button_up():
 	y_axis = "received"
+	y_title = "lines_received"
