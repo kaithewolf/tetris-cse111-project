@@ -264,10 +264,14 @@ func _on_GraphButton_button_up():
 	#if len(y_axis)*len(x_axis) == 0:
 	#	return
 	
-	x_axis = "piecesDropped"
+	x_axis = "date"
 	y_axis = "gameTime"
-	cmd = "select * from Multiplayer;"
+	cmd = "select min(julianday(date_played)) as mindate from Singleplayer where username = ?;"
 	arr = [selected_user]
+	data = select_with_param(cmd, arr)
+	
+	cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, gameTime from Singleplayer where username = ? and gameType = ? group by date order by date;"
+	arr = [selected_user, gameType]
 	data = select_with_param(cmd, arr)
 	var x_list = []
 	var y_list = []
