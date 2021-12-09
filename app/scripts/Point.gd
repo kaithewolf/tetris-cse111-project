@@ -15,8 +15,10 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-func set_data(x_str:String, y_str:String):
-	data_label.text = x_str+"\n"+y_str
+func set_data(data:Dictionary):
+	var key_list = data.keys()
+	for i in range(0, len(key_list)-1):
+		data_label.text += str(key_list[i])+": "+str(data[key_list[i]])+"\n"
 
 func _on_Node2D_mouse_entered():
 	fill.visible = true

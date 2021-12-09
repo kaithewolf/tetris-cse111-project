@@ -15,7 +15,7 @@ var number_scale = [100000, 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1, 0.
 
 #lookup month list index = month
 var month_days_list  = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-var date_scale = [365, 183, 92, 46, 28, 14, 7]
+var date_scale = [1825, 365, 183, 92, 46, 28, 14, 7]
 
 
 # Called when the node enters the scene tree for the first time.
@@ -85,6 +85,7 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 	x_axis_end = max_size
 	total_size = min_size #start at minimum
 	
+	print(ceil(x_axis_end/xscale_value))
 	#place each x label
 	while total_size <= max_size:
 		var new_label = Label.new()
@@ -101,9 +102,14 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 		
 		total_size += xscale_value #increase each position
 		if len(date_list) > 0:
-			total_size += xscale_value
 			if min_month + floor(xscale_value/30) <= 12:
-				min_month += floor(xscale_value/30)
+				if floor(xscale_value/30) > 0:
+					min_month += floor(xscale_value/30)
+				elif min_day + xscale_value < month_days_list[min_month-1]:
+					min_day += xscale_value
+				else:
+					min_day = min_day+xscale_value - month_days_list[min_month-1]
+					min_month += 1
 			else:
 				min_month = min_month+floor(xscale_value/30) - 12
 				min_year += 1
@@ -140,8 +146,8 @@ func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, title_tx
 	
 	var date_list = []
 	if "date_played" in data[0]:
-		for i in data:
-			date_list.append(i["date_played"])
+		for d in data:
+			date_list.append(d["date_played"])
 	
 	create_axes(xmin, ymin, xmax, ymax, date_list)
 	if x_axis_end == xmin:
@@ -160,10 +166,7 @@ func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, title_tx
 			new_point.set_owner($runtime)
 			var x_str = x_axis.text+": "+str(x_list[i])
 			var y_str = y_axis.text+": "+str(y_list[i])
-			if len(date_list) > 0:
-				new_point.set_data(date_list[i], y_str)
-			else:
-				new_point.set_data(x_str, y_str)
+			new_point.set_data(data[i])
 
 func clear_graph():
 	#delete all points
