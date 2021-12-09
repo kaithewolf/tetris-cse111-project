@@ -12,10 +12,9 @@ var x_axis_end
 var y_axis_end
 
 var number_scale = [100000, 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1, 0.5, 0.1]
-var date_scale  = ["year","6months", "month", "2week", "week", "day"]
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+
+#lookup month list index = month
+var month_days_list  = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 
 # Called when the node enters the scene tree for the first time.

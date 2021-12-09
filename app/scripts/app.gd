@@ -265,12 +265,11 @@ func _on_GraphButton_button_up():
 	#	return
 	
 	x_axis = "date"
-	y_axis = "gameTime"
-	cmd = "select min(julianday(date_played)) as mindate from Singleplayer where username = ?;"
-	arr = [selected_user]
+	cmd = "select min(julianday(date_played)) as mindate from Singleplayer where username = ? and gameType = ?;"
+	arr = [selected_user, gameType]
 	data = select_with_param(cmd, arr)
 	
-	cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, gameTime from Singleplayer where username = ? and gameType = ? group by date order by date;"
+	cmd = "select julianday(date_played) - "+str(data[0]["mindate"])+" as date, "+y_axis+" from Singleplayer where username = ? and gameType = ? group by date order by date desc;"
 	arr = [selected_user, gameType]
 	data = select_with_param(cmd, arr)
 	var x_list = []
@@ -278,7 +277,6 @@ func _on_GraphButton_button_up():
 	for i in data:
 		x_list.append(i[x_axis])
 		y_list.append(i[y_axis])
-		print(x_list)
 	
 	var x_txt = x_axis
 	var y_txt = y_axis
@@ -317,36 +315,36 @@ func _on_PercentileButton_button_up():
 
 
 func _on_gameTime_button_up():
-	pass # Replace with function body.
+	y_axis = "gameTime"
 
 
 func _on_pps_button_up():
-	pass # Replace with function body.
+	y_axis = "pps"
 
 
 func _on_piecesDropped_button_up():
-	pass # Replace with function body.
+	y_axis = "piecesDropped"
 
 
 func _on_apm_button_up():
-	pass # Replace with function body.
+	y_axis = "apm"
 
 
 func _on_apb_button_up():
-	pass # Replace with function body.
+	y_axis = "apb"
 
 
 func _on_b2b_button_up():
-	pass # Replace with function body.
+	y_axis = "b2b"
 
 
 func _on_apbppb_button_up():
-	pass # Replace with function body.
+	y_axis = "apbppb"
 
 
 func _on_mppsspps_button_up():
-	pass # Replace with function body.
+	y_axis = "mppspps"
 
 
 func _on_received_button_up():
-	pass # Replace with function body.
+	y_axis = "received"
