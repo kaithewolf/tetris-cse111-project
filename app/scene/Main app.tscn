@@ -113,6 +113,16 @@ position = Vector2( 648.623, 522.924 )
 scale = Vector2( 0.85, 0.85 )
 
 [node name="GraphButton" type="Button" parent="."]
+margin_left = 495.0
+margin_top = 403.0
+margin_right = 579.0
+margin_bottom = 435.0
+text = "Graph"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PercentileButton" type="Button" parent="."]
 margin_left = 357.283
 margin_top = 402.343
 margin_right = 458.283
@@ -122,22 +132,169 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="."]
-margin_left = 226.0
-margin_top = 404.0
-margin_right = 325.0
-margin_bottom = 428.0
+[node name="ap" type="Button" parent="PercentileButton"]
+anchor_bottom = 3.521
+margin_left = -9.04636
+margin_top = 55.8854
+margin_right = 98.9536
+margin_bottom = -26.2236
+text = "Lines Recieved"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="apm" type="Button" parent="PercentileButton"]
+margin_left = -256.29
+margin_top = 96.7055
+margin_right = -165.29
+margin_bottom = 117.706
+text = "APM"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="apb" type="Button" parent="PercentileButton"]
+margin_left = -135.183
+margin_top = 95.5288
+margin_right = -39.1834
+margin_bottom = 117.529
+text = "APB"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b2b" type="Button" parent="PercentileButton"]
+margin_left = -7.15434
+margin_top = 97.1172
+margin_right = 101.846
+margin_bottom = 117.117
+text = "B2B"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="apb2" type="Button" parent="PercentileButton"]
+margin_left = -252.924
+margin_top = 54.1843
+margin_right = -166.924
+margin_bottom = 74.1843
+text = "apb/ppb"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pps" type="Button" parent="PercentileButton"]
+margin_left = -139.924
+margin_top = 55.1037
+margin_right = -34.9236
+margin_bottom = 75.1037
+text = "mPPS/sPPS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RatioButton" type="Button" parent="."]
+margin_left = 223.336
+margin_top = 403.0
+margin_right = 329.336
+margin_bottom = 429.0
 text = "MP/SP ratio"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="."]
-margin_left = 99.0
+[node name="apb" type="Button" parent="RatioButton"]
+margin_left = -121.104
+margin_top = 52.5635
+margin_right = -35.1037
+margin_bottom = 72.5635
+text = "apb/ppb"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pps" type="Button" parent="RatioButton"]
+margin_left = -8.1037
+margin_top = 52.9427
+margin_right = 96.8963
+margin_bottom = 72.9427
+text = "mPPS/sPPS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PerformanceButton" type="Button" parent="."]
+margin_left = 106.122
 margin_top = 403.0
-margin_right = 167.0
+margin_right = 199.122
 margin_bottom = 428.0
 text = "Performance"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SingleplayerButtons" type="Node2D" parent="PerformanceButton"]
+visible = false
+
+[node name="gameTime" type="Button" parent="PerformanceButton/SingleplayerButtons"]
+margin_left = -1.80542
+margin_top = 54.2441
+margin_right = 89.1946
+margin_bottom = 75.2441
+text = "gameTime"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pps" type="Button" parent="PerformanceButton/SingleplayerButtons"]
+margin_left = 119.207
+margin_top = 53.0674
+margin_right = 215.207
+margin_bottom = 75.0674
+text = "PPS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="piecesDropped" type="Button" parent="PerformanceButton/SingleplayerButtons"]
+margin_left = 247.871
+margin_top = 54.6557
+margin_right = 356.871
+margin_bottom = 74.6557
+text = "piecesDropped"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MultiplayerButtons" type="Node2D" parent="PerformanceButton"]
+visible = false
+
+[node name="apm" type="Button" parent="PerformanceButton/MultiplayerButtons"]
+margin_left = -6.15668
+margin_top = 96.1653
+margin_right = 84.8433
+margin_bottom = 117.165
+text = "APM"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="apb" type="Button" parent="PerformanceButton/MultiplayerButtons"]
+margin_left = 114.95
+margin_top = 94.9886
+margin_right = 210.95
+margin_bottom = 116.989
+text = "APB"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b2b" type="Button" parent="PerformanceButton/MultiplayerButtons"]
+margin_left = 242.979
+margin_top = 96.5769
+margin_right = 351.979
+margin_bottom = 116.577
+text = "B2B"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -153,3 +310,6 @@ __meta__ = {
 [connection signal="edit_button_pressed" from="Menu2" to="." method="_on_Menu2_edit_button_pressed"]
 [connection signal="insert_button_pressed" from="Menu2" to="." method="_on_Menu2_insert_button_pressed"]
 [connection signal="button_up" from="GraphButton" to="." method="_on_GraphButton_button_up"]
+[connection signal="button_up" from="PercentileButton" to="." method="_on_PercentileButton_button_up"]
+[connection signal="button_up" from="RatioButton" to="." method="_on_RatioButton_button_up"]
+[connection signal="button_up" from="PerformanceButton" to="." method="_on_PerformanceButton_button_up"]

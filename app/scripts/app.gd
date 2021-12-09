@@ -12,6 +12,10 @@ var selected_table:String = "Sprint"
 var selected_item:Dictionary= {}
 var gameType:int = 1
 
+
+var x_axis:String
+var y_axis:String
+
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -40,6 +44,7 @@ func _ready():
 	db.open_db()
 	
 	update_menu()
+	reset_buttons()
 	
 	var command = """
 	select * from Sprint_Leaderboard;
@@ -251,23 +256,59 @@ func _on_Menu2_insert_button_pressed(text, menu_name):
 	update_other_menu()
 	
 
-
 func _on_GraphButton_button_up():
 	$Graph.clear_graph()
 	var data = []
-	var cmd = "select * from SinglePlayer where username = ? and gameType = ?;"
-	var arr = [selected_user, gameType]
-	data = select_with_param(cmd, arr)
+	var arr = []
+	var cmd:String
+	#if len(y_axis)*len(x_axis) == 0:
+	#	return
+	
+	if x_axis == "percentile":
+		cmd = "SELECT * FROM Multiplayer;"
+		x_axis = "attack"
+		y_axis = "b2b"
+	
+	data = select_from_table(cmd)
 	var x_list = []
 	var y_list = []
 	for i in data:
-		x_list.append(i["piecesDropped"])
-		y_list.append(i["gameTime"])
+		x_list.append(i[x_axis])
+		y_list.append(i[y_axis])
+		print(x_list)
 	
-	var x_txt = "piecesDropped"
-	var y_txt = "gameTime"
+	var x_txt = x_axis
+	var y_txt = y_axis
 	if gameType == 5:
 		y_txt = "Score"
 	var title_txt = selected_user+"\'s "+selected_table+" games' "+x_txt+" over "+y_txt
 	if len(x_list)*len(y_list) != 0:
 		$Graph.graph_points(x_list, y_list, x_txt, y_txt, title_txt, data)
+
+func reset_buttons():
+	for n in $RatioButton.get_children():
+		n.visible = false
+	for n in $PercentileButton.get_children():
+		n.visible = false
+	for n in $PerformanceButton.get_children():
+		n.visible = false
+	
+func _on_RatioButton_button_up():
+	reset_buttons()
+	for n in $RatioButton.get_children():
+		n.visible = true
+
+
+func _on_PerformanceButton_button_up():
+	reset_buttons()
+	for n in $PerformanceButton.get_children():
+		n.visible = true
+
+
+func _on_PercentileButton_button_up():
+	reset_buttons()
+	for n in $PercentileButton.get_children():
+		n.visible = true
+	x_axis = "percentile"
+
+	
