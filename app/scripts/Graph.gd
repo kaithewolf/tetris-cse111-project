@@ -15,7 +15,8 @@ var number_scale = [100000, 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1, 0.
 
 #lookup month list index = month
 var month_days_list  = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-var date_scale = [1825, 365, 183, 92, 46, 28, 14, 7]
+var date_scale = [1825, 366, 183, 102, 56, 28, 14, 7]
+var year_days = 366
 
 
 # Called when the node enters the scene tree for the first time.
@@ -46,7 +47,7 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 		max_day = int(max_txt[2])
 		
 		#find appropriate scale (if it's too small for the large number, go 2 smaller
-		for i in range(0, len(date_scale)-1):
+		for i in range(0, len(date_scale)):
 			if xmax - xmin > date_scale[i] and i < length-2:
 				xscale_value = date_scale[i+1]
 				break
@@ -54,7 +55,7 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 				xscale_value = date_scale[i]
 	else:
 		#find number scale
-		for i in range(0, length-1):
+		for i in range(0, length):
 			if xmax - xmin > number_scale[i] and i < length-2:
 				xscale_value = number_scale[i+1]
 				break
@@ -62,7 +63,7 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 				xscale_value = number_scale[i]
 	
 	length = len(number_scale)
-	for i in range(0, length-1):
+	for i in range(0, length):
 		if ymax - ymin > number_scale[i] and i < length-2:
 			yscale_value = float(number_scale[i+1])
 			break
@@ -74,7 +75,7 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 	var total_size
 	#draw x axis based on scale value
 	if len(date_list) > 0:
-		min_size = min_day - month_days_list[min_month-1]
+		min_size = 0
 	else:
 		min_size = floor(xmin/xscale_value)*xscale_value
 	
@@ -85,7 +86,6 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 	x_axis_end = max_size
 	total_size = min_size #start at minimum
 	
-	print(ceil(x_axis_end/xscale_value))
 	#place each x label
 	while total_size <= max_size:
 		var new_label = Label.new()
@@ -102,17 +102,38 @@ func create_axes(xmin, ymin, xmax, ymax, date_list):
 		
 		total_size += xscale_value #increase each position
 		if len(date_list) > 0:
-			if min_month + floor(xscale_value/30) <= 12:
-				if floor(xscale_value/30) > 0:
-					min_month += floor(xscale_value/30)
-				elif min_day + xscale_value < month_days_list[min_month-1]:
-					min_day += xscale_value
-				else:
-					min_day = min_day+xscale_value - month_days_list[min_month-1]
-					min_month += 1
+			#number of days max
+			#xscale_value = number of days to go to each axis
+			var remaining_days = xscale_value
+#			how many years
+			var years_passed = floor(xscale_value/year_days)
+			min_year += years_passed
+			remaining_days -= years_passed * year_days
+			
+			#how many months
+			while remaining_days >= month_days_list[min_month-1]:
+				remaining_days -= month_days_list[min_month-1]
+				min_month += 1
+				if min_month > 12:
+					min_month = 1
+					min_year += 1
+			
+			#how many days
+			#fits neatly within month
+			if remaining_days+min_day <= month_days_list[min_month-1]:
+				min_day = remaining_days+min_day
 			else:
-				min_month = min_month+floor(xscale_value/30) - 12
-				min_year += 1
+				#roll over to next month
+				min_day = remaining_days+min_day - month_days_list[min_month-1]
+				if min_month + 1 < 12:
+					min_month += 1
+				else:
+					#next month rolls over to next year
+					min_year += 1
+					min_month = 1
+	
+
+
 		
 	#draw y axis based on scale value
 	min_size = floor(ymin/float(yscale_value))*yscale_value
@@ -158,7 +179,7 @@ func graph_points(x_list, y_list, x_axis_txt:String, y_axis_txt:String, title_tx
 	x_axis.text = x_axis_txt
 	y_axis.text = y_axis_txt
 	title.text = title_txt
-	for i in range(len(x_list)):
+	for i in range(0, len(x_list)):
 		var new_point = point.instance()
 		if x_list[i] != null and y_list[i] != null:
 			new_point.position = Vector2(float(x_list[i]-xmin)/(x_axis_end-xmin)*x_graph_end + x_offset, -float(y_list[i]-ymin)/(y_axis_end-ymin)*y_graph_end + y_offset)

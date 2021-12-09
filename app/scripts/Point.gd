@@ -17,7 +17,8 @@ func _ready():
 #	pass
 func set_data(data:Dictionary):
 	var key_list = data.keys()
-	for i in range(0, len(key_list)-1):
+	data_label.text = ""
+	for i in range(0, len(key_list)):
 		data_label.text += str(key_list[i])+": "+str(data[key_list[i]])+"\n"
 
 func _on_Node2D_mouse_entered():
